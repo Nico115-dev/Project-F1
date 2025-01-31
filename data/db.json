@@ -306,7 +306,8 @@
           }
         }
       },
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/89/Max_Verstappen_2023_Austria_FP2_%28cropped%29.jpg"
+      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
+      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png"
     },
     {
       "equipo": "Mercedes-AMG Petronas",
@@ -356,7 +357,8 @@
           }
         }
       },
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/87/Lewis_Hamilton_2022_Imola.jpg"
+      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
+      "imagen2": "../src/img/w15Lado-removebg-preview.png"
     }
   ]
 }
