@@ -27,6 +27,23 @@ class inicio extends HTMLElement {
                 <a href="menu.html" class="menu-item">▶ Start </a>
             </nav>
         </div>
+
+        <div class="volumen-container">
+        <button class="volumen-btn">🔊 Volumen</button>
+        <div class="volumen-slider">
+            <input type="range" id="controlVolumen" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+
+    <script>
+        let video = document.getElementById("backgroundVideo");
+        let slider = document.getElementById("controlVolumen");
+        video.volume = 1; // Volumen inicial al máximo
+
+        slider.addEventListener("input", function() {
+            video.volume = slider.value;
+        });
+    </script>
         `;
     }
 }

@@ -218,3 +218,44 @@ clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
 transform: skewX(-10deg);
 opacity: 0.8;
 }
+
+.volumen-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+}
+
+/* Botón de volumen */
+.volumen-btn {
+    background-color: #b91b06;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Barra de volumen (oculta por defecto) */
+.volumen-slider {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    display: none;
+    width: 100px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar la barra cuando se pasa el mouse */
+.volumen-container:hover .volumen-slider {
+    display: block;
+}
+
+input[type="range"] {
+    width: 100%;
+}
