@@ -43,14 +43,6 @@ export const obtenerVehiculos = async function () {
           <p><strong>Motor:</strong> ${vehiculo.motor}</p>
         `;
 
-        // Información adicional en una sección flotante a la derecha
-        const stats = document.createElement("div");
-        stats.classList.add("vehicle-stats");
-        stats.innerHTML = `
-          <p><strong>Velocidad Máxima:</strong> ${vehiculo.velocidad_maxima_kmh} km/h</p>
-          <p><strong>Aceleración:</strong> ${vehiculo.aceleracion_0_100} segundos</p>
-        `;
-
         // Normalizar la ruta de la segunda imagen
         const imagen2Path = vehiculo.imagen2.replace(/^(\.\.\/)+/, "");
         galleryItem.style.setProperty("--imagen2", `url(http://127.0.0.1:5502/${imagen2Path})`);
@@ -83,7 +75,6 @@ export const obtenerVehiculos = async function () {
         galleryItem.appendChild(nameVehicle);
         galleryItem.appendChild(img);
         galleryItem.appendChild(description);
-        galleryItem.appendChild(stats);
         gallery.appendChild(galleryItem);
       });
     })
