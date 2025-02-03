@@ -9,6 +9,14 @@
     font-family: Arial, sans-serif;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
   }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000033 0%, #003366 100%);
+    color: white;
+    min-height: 100vh;
+  }
+  
   
   .title {
     text-align: center;
@@ -39,6 +47,7 @@
   }
   
   .button-group {
+    margin-bottom: 3vh;
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
