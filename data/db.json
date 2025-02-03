@@ -227,200 +227,172 @@
   ],
   "circuitos": [
     {
-      "nombre": "Circuito de Mónaco",
-      "pais": "Mónaco",
-      "longitud_km": 3.34,
-      "vueltas": 78,
-      "descripcion": "Uno de los circuitos más prestigiosos y difíciles del calendario, conocido por sus calles angostas y la falta de zonas de adelantamiento.",
+      "round": "TESTING",
+      "type": "testing",
+      "dates": "26-28",
+      "month": "FEB",
+      "country": "Sakhir",
+      "flag": "🇧🇭",
+      "title": "FORMULA 1 ARAMCO PRE-SEASON",
+      "subtitle": "TESTING 2025",
+      "circuitImage": "../img/Qatar carbon.avif",
       "record_vuelta": {
         "tiempo": "1:10.166",
         "piloto": "Lewis Hamilton",
         "año": 2019
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 2
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Monte_Carlo_Formula_1_track_map.svg",
-      "id": "60c1"
+        { "temporada": 2021, "piloto": 1 },
+        { "temporada": 2022, "piloto": 2 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     },
     {
-      "nombre": "Silverstone",
-      "pais": "Reino Unido",
-      "longitud_km": 5.89,
-      "vueltas": 52,
-      "descripcion": "Uno de los circuitos más rápidos del calendario, con curvas de alta velocidad como Maggotts y Becketts.",
+      "round": "ROUND 1",
+      "type": "race",
+      "dates": "14-16",
+      "month": "MAR",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "title": "FORMULA 1 LOUIS VUITTON AUSTRALIAN",
+      "subtitle": "GRAND PRIX 2025",
+      "circuitImage": "../img/Australia carbon.avif",
       "record_vuelta": {
         "tiempo": "1:27.097",
         "piloto": "Max Verstappen",
         "año": 2020
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 5
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Silverstone_Circuit_2020_layout.png",
-      "id": "3889"
+        { "temporada": 2021, "piloto": 3 },
+        { "temporada": 2022, "piloto": 5 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     },
     {
-      "nombre": "Circuito de Spa-Francorchamps",
-      "pais": "Bélgica",
-      "longitud_km": 7,
-      "vueltas": 44,
-      "descripcion": "Famoso por la curva Eau Rouge y la larga recta de Kemmel, un circuito donde la potencia del motor es clave.",
+      "round": "ROUND 2",
+      "type": "race",
+      "dates": "21-23",
+      "month": "MAR",
+      "country": "China",
+      "flag": "🇨🇳",
+      "title": "FORMULA 1 HEINEKEN CHINESE GRAND",
+      "subtitle": "PRIX 2025",
+      "circuitImage": "../img/China carbon.avif",
       "record_vuelta": {
         "tiempo": "1:46.286",
         "piloto": "Valtteri Bottas",
         "año": 2018
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Circuit_Spa_2018.png",
-      "id": "6755"
+        { "temporada": 2021, "piloto": 1 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     },
     {
-      "nombre": "Circuito de Monza",
-      "pais": "Italia",
-      "longitud_km": 5.79,
-      "vueltas": 53,
-      "descripcion": "Conocido como 'El Templo de la Velocidad', Monza es el circuito más rápido del calendario con largas rectas y chicanes icónicas.",
+      "round": "ROUND 3",
+      "type": "race",
+      "dates": "04-06",
+      "month": "APR",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "title": "FORMULA 1 LENOVO JAPANESE GRAND",
+      "subtitle": "PRIX 2025",
+      "circuitImage": "../img/Japan carbon.avif",
       "record_vuelta": {
         "tiempo": "1:21.046",
         "piloto": "Rubens Barrichello",
         "año": 2004
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 2
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Monza_track_map.svg",
-      "id": "1022"
+        { "temporada": 2021, "piloto": 2 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     },
     {
-      "nombre": "Interlagos",
-      "pais": "Brasil",
-      "longitud_km": 4.31,
-      "vueltas": 71,
-      "descripcion": "Interlagos es un circuito legendario con cambios de elevación y un trazado técnico que ha sido sede de algunas de las carreras más emocionantes de la historia.",
+      "round": "ROUND 4",
+      "type": "race",
+      "dates": "11-13",
+      "month": "APR",
+      "country": "Bahrain",
+      "flag": "🇧🇭",
+      "title": "FORMULA 1 BAHRAIN GRAND PRIX 2025",
+      "subtitle": "",
+      "circuitImage": "../img/Bahrain carbon.avif",
       "record_vuelta": {
         "tiempo": "1:10.540",
         "piloto": "Valtteri Bottas",
         "año": 2018
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/23/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace_%28Interlagos%29.svg",
-      "id": "b9d8"
+        { "temporada": 2021, "piloto": 3 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     },
     {
-      "nombre": "Circuito de Yas Marina",
-      "pais": "Emiratos Árabes Unidos",
-      "longitud_km": 5.28,
-      "vueltas": 58,
-      "descripcion": "Ubicado en Abu Dhabi, es famoso por ser el circuito donde se definen muchos campeonatos, con un diseño moderno y una espectacular carrera nocturna.",
+      "round": "ROUND 5",
+      "type": "race",
+      "dates": "18-20",
+      "month": "APR",
+      "country": "Saudi Arabia",
+      "flag": "🇸🇦",
+      "title": "FORMULA 1 STC SAUDI ARABIAN GRAND",
+      "subtitle": "PRIX 2025",
+      "circuitImage": "../img/Saudi Arabia carbon.avif",
       "record_vuelta": {
         "tiempo": "1:39.283",
         "piloto": "Lewis Hamilton",
         "año": 2019
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 3
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Yas_Marina_Circuit_2021_layout.svg",
-      "id": "5a1e"
+        { "temporada": 2021, "piloto": 1 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 3 }
+      ]
     },
     {
-      "nombre": "Circuito de Suzuka",
-      "pais": "Japón",
-      "longitud_km": 5.81,
-      "vueltas": 53,
-      "descripcion": "Un circuito desafiante con un diseño en forma de ocho, famoso por sus curvas de alta velocidad como 130R y la 'S' de Senna.",
+      "round": "ROUND 6",
+      "type": "race",
+      "dates": "02-04",
+      "month": "MAY",
+      "country": "Miami",
+      "flag": "🇺🇸",
+      "title": "FORMULA 1 CRYPTO.COM MIAMI GRAND",
+      "subtitle": "PRIX 2025",
+      "circuitImage": "../img/Miami carbon.avif",
       "record_vuelta": {
         "tiempo": "1:30.983",
         "piloto": "Lewis Hamilton",
         "año": 2019
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Suzuka_circuit_map--2005.svg",
-      "id": "080f"
+        { "temporada": 2021, "piloto": 1 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
+    },
+    {
+      "round": "ROUND 7",
+      "type": "race",
+      "dates": "16-18",
+      "month": "MAY",
+      "country": "Emilia-Romagna",
+      "flag": "🇮🇹",
+      "title": "FORMULA 1 AWS GRAN PREMIO DEL",
+      "subtitle": "MADE IN ITALY E DELL&apos;EMILIA-ROMAGNA 2025",
+      "circuitImage": "../img/Australia carbon.png",
+      "record_vuelta": {
+        "tiempo": "1:30.983",
+        "piloto": "Lewis Hamilton",
+        "año": 2019
+      },
+      "ganadores": [
+        { "temporada": 2021, "piloto": 1 },
+        { "temporada": 2022, "piloto": 1 },
+        { "temporada": 2023, "piloto": 1 }
+      ]
     }
   ],
   "vehiculos": [
