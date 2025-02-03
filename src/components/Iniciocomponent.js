@@ -22,7 +22,7 @@ class Inicio extends HTMLElement {
             <nav class="f1-menu">
                 <img src="src/img/image.png" alt="Logo">
                 <a href="../../src/views/menu.html" class="menu-item">▶ User</a>
-                <a href="../views/admPilotos.html" class="menu-item">▶ Admin</a>
+                <a href="../../src/views/indexAdmin.html" class="menu-item">▶ Admin</a>
             </nav>
         </div>
 
