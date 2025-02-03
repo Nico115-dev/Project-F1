@@ -24,7 +24,7 @@ class inicio extends HTMLElement {
         <div class="menu-container">
             <nav class="f1-menu">
                 <img src="src/img/image.png" alt="">
-                <a href="menu.html" class="menu-item">▶ Start </a>
+                <a href="src/views/menu.html" class="menu-item">▶ Start </a>
             </nav>
         </div>
 

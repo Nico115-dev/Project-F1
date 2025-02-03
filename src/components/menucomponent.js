@@ -9,7 +9,7 @@ class menu extends HTMLElement {
 
           <header class="nav-bar">
         <div class="logo">
-            <img src="src/img/image.png" alt="F1 Logo">
+            <img src="../../src/img/image.png" alt="F1 Logo">
         </div>
         <nav>
             <ul>
