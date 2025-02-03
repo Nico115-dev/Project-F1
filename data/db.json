@@ -1,194 +1,25 @@
 {
   "pilotos": [
-    {
-      "id": "1",
-      "nombre": "Max Verstappen",
-      "equipo": "Red Bull Racing",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/v1712849101/content/dam/fom-website/drivers/2024Drivers/verstappen.png",
-      "fecha de nacimiento": "30/09/1997",
-      "Nacionalidad": "Belga"
-    },
-    {
-      "id": "2",
-      "nombre": "Sergio Pérez",
-      "equipo": "Red Bull Racing",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/perez",
-      "fecha de nacimiento": "26/01/1990",
-      "Nacionalidad": "Mexicano"
-    },
-    {
-      "id": "3",
-      "nombre": "Lewis Hamilton",
-      "equipo": "Mercedes-AMG Petronas",
-      "rol": "Líder",
-      "imagen": "https://choiceracing.co.uk/cdn/shop/files/1_d8f72a1e-9a2b-4f96-a646-295152a72e31_1200x.jpg?v=1714326479",
-      "fecha de nacimiento": "07/01/1985",
-      "Nacionalidad": "Britanico"
-    },
-    {
-      "id": "4",
-      "nombre": "George Russell",
-      "equipo": "Mercedes-AMG Petronas",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/v1712849109/content/dam/fom-website/drivers/2024Drivers/russell.png",
-      "fecha de nacimiento": "15/02/1998",
-      "Nacionalidad": "Britanico"
-    },
-    {
-      "id": "5",
-      "nombre": "Charles Leclerc",
-      "equipo": "Ferrari",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/v1712849104/content/dam/fom-website/drivers/2024Drivers/leclerc.png",
-      "fecha de nacimiento": "16/10/1997",
-      "Nacionalidad": "Monegasco"
-    },
-    {
-      "id": "6",
-      "nombre": "Carlos Sainz",
-      "equipo": "Ferrari",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/sainz",
-      "fecha de nacimiento": "01/09/1994",
-      "Nacionalidad": "Español"
-    },
-    {
-      "id": "7",
-      "nombre": "Lando Norris",
-      "equipo": "McLaren",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/v1712849107/content/dam/fom-website/drivers/2024Drivers/norris.png",
-      "fecha de nacimiento": "13/11/1999",
-      "Nacionalidad": "Britanico"
-    },
-    {
-      "id": "8",
-      "nombre": "Oscar Piastri",
-      "equipo": "McLaren",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/piastri",
-      "fecha de nacimiento": "06/04/2001",
-      "Nacionalidad": "Australiano"
-    },
-    {
-      "id": "9",
-      "nombre": "Fernando Alonso",
-      "equipo": "Aston Martin",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/alonso",
-      "fecha de nacimiento": "29/07/1981",
-      "Nacionalidad": "Español"
-    },
-    {
-      "id": "10",
-      "nombre": "Lance Stroll",
-      "equipo": "Aston Martin",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto/q_auto/v1712849104/content/dam/fom-website/drivers/2024Drivers/stroll.png",
-      "fecha de nacimiento": "29/10/1998",
-      "Nacionalidad": "Canadiense"
-    },
-    {
-      "id": "11",
-      "nombre": "Esteban Ocon",
-      "equipo": "Alpine",
-      "rol": "Líder",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxmtVpHOiuQVWM3JEkv_PqhsVgQqPmNC_YA&s",
-      "fecha de nacimiento": "17/09/1996",
-      "Nacionalidad": "Frances"
-    },
-    {
-      "id": "12",
-      "nombre": "Pierre Gasly",
-      "equipo": "Alpine",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/gasly",
-      "fecha de nacimiento": "07/02/1996",
-      "Nacionalidad": "Frances"
-    },
-    {
-      "id": "13",
-      "nombre": "Valtteri Bottas",
-      "equipo": "Kick Sauber",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/bottas",
-      "fecha de nacimiento": "28/08/1989",
-      "Nacionalidad": "Finlandes"
-    },
-    {
-      "id": "14",
-      "nombre": "Zhou Guanyu",
-      "equipo": "Kick Sauber",
-      "rol": "Escudero",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/zhou",
-      "fecha de nacimiento": "30/05/1999",
-      "Nacionalidad": "Chino"
-    },
-    {
-      "id": "15",
-      "nombre": "Kevin Magnussen",
-      "equipo": "Haas",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/magnussen",
-      "fecha de nacimiento": "05/10/1992",
-      "Nacionalidad": "Danés"
-    },
-    {
-      "id": "16",
-      "nombre": "Nico Hülkenberg",
-      "equipo": "Haas",
-      "rol": "Escudero",
-      "imagen": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9odWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=",
-      "fecha de nacimiento": "19/08/1987",
-      "Nacionalidad": "Aleman"
-    },
-    {
-      "id": "17",
-      "nombre": "Yuki Tsunoda",
-      "equipo": "AlphaTauri",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/tsunoda",
-      "fecha de nacimiento": "11/05/2000",
-      "Nacionalidad": "Japones"
-    },
-    {
-      "id": "18",
-      "nombre": "Daniel Ricciardo",
-      "equipo": "AlphaTauri",
-      "rol": "Escudero",
-      "imagen": "https://soymotor.com/sites/default/files/2024-02/daniel-ricciardo-2024.png",
-      "fecha de nacimiento": "01/07/1989",
-      "Nacionalidad": "Australiano"
-    },
-    {
-      "id": "19",
-      "nombre": "Alexander Albon",
-      "equipo": "Williams",
-      "rol": "Líder",
-      "imagen": "https://media.formula1.com/image/upload/v1712849104/content/dam/fom-website/drivers/2024Drivers/albon.png",
-      "fecha de nacimiento": "23/03/1996",
-      "Nacionalidad": "Britanico"
-    },
-    { 
-      "id": "20",
-      "nombre": "Logan Sargeant",
-      "equipo": "Williams",
-      "rol": "Escudero",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBgr6W3V8FHYMxhqyKedK9KJs3UMGTjtRBw&s",
-      "fecha de nacimiento": "31/12/2000",
-      "Nacionalidad": "Estadounidense"
-    },
-    {
-      "id": "21",
-      "nombre": "Sebastian",
-      "equipo": "RedBUll",
-      "rol": "Escudero",
-      "imagen": "https://cdn-6.motorsport.com/images/mgl/6D1XbeV0/s300/max-verstappen-red-bull-racing.jpg",
-      "fechaNacimiento": "2005-05-29",
-      "nacionalidad": "Colombiano"
-    }
+    { "id": 1, "nombre": "Max Verstappen", "equipo": "Red Bull Racing", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/v1712849101/content/dam/fom-website/drivers/2024Drivers/verstappen.png", "fecha de nacimiento": "30/09/1997", "Nacionalidad": "Belga" },
+    { "id": 2, "nombre": "Sergio Pérez", "equipo": "Red Bull Racing", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/perez", "fecha de nacimiento": "26/01/1990", "Nacionalidad": "Mexicano"  },
+    { "id": 3, "nombre": "Lewis Hamilton", "equipo": "Mercedes-AMG Petronas", "rol": "Líder", "imagen": "https://choiceracing.co.uk/cdn/shop/files/1_d8f72a1e-9a2b-4f96-a646-295152a72e31_1200x.jpg?v=1714326479", "fecha de nacimiento": "07/01/1985", "Nacionalidad": "Britanico"  },
+    { "id": 4, "nombre": "George Russell", "equipo": "Mercedes-AMG Petronas", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/v1712849109/content/dam/fom-website/drivers/2024Drivers/russell.png", "fecha de nacimiento": "15/02/1998", "Nacionalidad": "Britanico"  },
+    { "id": 5, "nombre": "Charles Leclerc", "equipo": "Ferrari", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/v1712849104/content/dam/fom-website/drivers/2024Drivers/leclerc.png", "fecha de nacimiento": "16/10/1997", "Nacionalidad": "Monegasco"  },
+    { "id": 6, "nombre": "Carlos Sainz", "equipo": "Ferrari", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/sainz", "fecha de nacimiento": "01/09/1994", "Nacionalidad": "Español"  },
+    { "id": 7, "nombre": "Lando Norris", "equipo": "McLaren", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/v1712849107/content/dam/fom-website/drivers/2024Drivers/norris.png", "fecha de nacimiento": "13/11/1999", "Nacionalidad": "Britanico"  },
+    { "id": 8, "nombre": "Oscar Piastri", "equipo": "McLaren", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/piastri", "fecha de nacimiento": "06/04/2001", "Nacionalidad": "Australiano"  },
+    { "id": 9, "nombre": "Fernando Alonso", "equipo": "Aston Martin", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/alonso", "fecha de nacimiento": "29/07/1981", "Nacionalidad": "Español"  },
+    { "id": 10, "nombre": "Lance Stroll", "equipo": "Aston Martin", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto/q_auto/v1712849104/content/dam/fom-website/drivers/2024Drivers/stroll.png", "fecha de nacimiento": "29/10/1998", "Nacionalidad": "Canadiense"},
+    { "id": 11, "nombre": "Esteban Ocon", "equipo": "Alpine", "rol": "Líder", "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxmtVpHOiuQVWM3JEkv_PqhsVgQqPmNC_YA&s", "fecha de nacimiento": "17/09/1996", "Nacionalidad": "Frances"},
+    { "id": 12, "nombre": "Pierre Gasly", "equipo": "Alpine", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/gasly", "fecha de nacimiento": "07/02/1996", "Nacionalidad": "Frances"},
+    { "id": 13, "nombre": "Valtteri Bottas", "equipo": "Kick Sauber", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/bottas", "fecha de nacimiento": "28/08/1989", "Nacionalidad": "Finlandes"},
+    { "id": 14, "nombre": "Zhou Guanyu", "equipo": "Kick Sauber", "rol": "Escudero", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/zhou", "fecha de nacimiento": "30/05/1999", "Nacionalidad": "Chino"},
+    { "id": 15, "nombre": "Kevin Magnussen", "equipo": "Haas", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/magnussen", "fecha de nacimiento": "05/10/1992", "Nacionalidad": "Danés"},
+    { "id": 16, "nombre": "Nico Hülkenberg", "equipo": "Haas", "rol": "Escudero", "imagen": "https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMy9kcml2ZXJzL2hlYWRzaG90cy9mMS9odWwucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=", "fecha de nacimiento": "19/08/1987", "Nacionalidad": "Aleman" },
+    { "id": 17, "nombre": "Yuki Tsunoda", "equipo": "AlphaTauri", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/tsunoda", "fecha de nacimiento": "11/05/2000", "Nacionalidad": "Japones" },
+    { "id": 18, "nombre": "Daniel Ricciardo", "equipo": "AlphaTauri", "rol": "Escudero", "imagen": "https://soymotor.com/sites/default/files/2024-02/daniel-ricciardo-2024.png", "fecha de nacimiento": "01/07/1989", "Nacionalidad": "Australiano"},
+    { "id": 19, "nombre": "Alexander Albon", "equipo": "Williams", "rol": "Líder", "imagen": "https://media.formula1.com/image/upload/v1712849104/content/dam/fom-website/drivers/2024Drivers/albon.png", "fecha de nacimiento": "23/03/1996", "Nacionalidad": "Britanico"},
+    { "id": 20, "nombre": "Logan Sargeant", "equipo": "Williams", "rol": "Escudero", "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBgr6W3V8FHYMxhqyKedK9KJs3UMGTjtRBw&s", "fecha de nacimiento": "31/12/2000", "Nacionalidad": "Estadounidense"}
   ],
   "equipos": [
     {

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pilotos</title>
-    <link rel="stylesheet" href="src/styles/pilotoStyles.css" />
-    <script type="module" src="./app.js" defer></script>
-    <link rel="icon" type="image/svg+xml" href="../../src/img/image.png" />
-  </head>
-  <body>
-    <audio id="miAudio" autoplay loop>
-      <source src="src/img/F1.mp3" type="audio/mpeg">
-      Tu navegador no soporta el audio.
-    </audio>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilotos</title>
+  <link rel="stylesheet" href="../styles/pilotoStyles.css">
+</head>
+<body>
+  <main>
+        <audio id="miAudio" autoplay loop>
+        <source src="../../src/img/F1.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
     <pilotos-component></pilotos-component>
-  </body>
+  </main>
+  <script type="module" src="../components/pilotosComponent.js"></script>
+</body>
 </html>

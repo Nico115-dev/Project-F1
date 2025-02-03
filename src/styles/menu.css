@@ -71,7 +71,6 @@
     backdrop-filter: blur(8px);
     padding: 1.5rem;
     border-radius: 8px;
-    height: fit-content;
   }
   
   .sidebar h2 {
