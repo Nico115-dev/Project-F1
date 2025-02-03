@@ -12,6 +12,7 @@ class PilotosComponent extends HTMLElement {
       this.innerHTML = /*html*/ `
       <style>
         @import url("http://localhost:5502/src/styles/pilotoStyles.css");
+        @import url("http://localhost:5502/src/styles/menu.css");
       </style>
       <header class="nav-bar">
       <div class="logo">
