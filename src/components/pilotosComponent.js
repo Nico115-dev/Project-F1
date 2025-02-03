@@ -9,8 +9,28 @@ class PilotosComponent extends HTMLElement {
     }
   
     render() {
-      this.innerHTML = `
-        <div class="grid-container" id="pilots-container"></div>
+      this.innerHTML = /*html*/ `
+      <style>
+        @import url("http://localhost:5502/src/styles/pilotoStyles.css");
+      </style>
+      <header class="nav-bar">
+      <div class="logo">
+        <img src="../../src/img/image.png" alt="F1 Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../src/views/menu.html">Home</a></li>
+          <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
+          <li><a href="../../src/views/pilotos.html">Teams</a></li>
+          <li><a href="../../src/views/pistas.html">Circuits</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="title-container">
+      <h1>Galería de Pilotos</h1>
+    </div>
+        <div class="grid-container" id="pilots-container">
+      </div>
         <div id="modal" class="modal">
           <div class="modal-content">
             <h2 id="pilot-name"></h2>
