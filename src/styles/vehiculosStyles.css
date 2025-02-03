@@ -1,0 +1,119 @@
+/* Importación de la fuente */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background: radial-gradient(circle at center, #001f3f, #000428);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Contenedor de la galería */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Espacio entre los elementos de la galería */
+}
+
+/* Estilos de cada item de la galería */
+.gallery-item {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  height: 300px; /* Ajustamos el alto para que haya suficiente espacio */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Asegura que los elementos se alineen correctamente */
+  justify-content: flex-start; /* Alineación vertical de los elementos */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el nombre del vehículo */
+.gallery-item h4 {
+  font-family: "Audiowide", serif;
+  font-style: normal;
+  color: white;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  z-index: 10; /* Asegura que el nombre siempre sea visible */
+}
+
+/* Estilo para la imagen principal */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Imagen por debajo de la descripción */
+}
+
+/* Estilo de la descripción (fuera de la tarjeta) */
+.gallery-item .description {
+  position: absolute;
+  top: 50%; /* Centra verticalmente la descripción */
+  left: 100%; /* Coloca la descripción fuera de la tarjeta (a la derecha) */
+  width: 300px; /* Ajusta el tamaño de la ventana de estadísticas */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  opacity: 0; /* Inicialmente invisible */
+  transition: left 0.3s ease, opacity 0.3s ease;
+  z-index: 5; /* Asegura que la descripción esté por encima de la imagen */
+  pointer-events: none; /* Evita que la descripción interfiera con el hover */
+  transform: translateY(-50%); /* Centra verticalmente la descripción */
+}
+
+/* Efecto hover para cada item */
+.gallery-item:hover {
+  transform: scale(
+    1.02
+  ); /* Aplica menos zoom a la tarjeta cuando el ratón pasa sobre ella */
+}
+
+.gallery-item:hover img {
+  opacity: 0; /* Oculta la imagen principal al hacer hover */
+}
+
+.gallery-item:hover .description {
+  left: 110%; /* Mueve la descripción a la derecha al hacer hover */
+  opacity: 1; /* Hace visible la descripción */
+  pointer-events: auto; /* Permite interactuar con la descripción */
+}
+
+.gallery-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: var(--imagen2);
+  background-size: contain; /* Asegura que la imagen se vea completa sin zoom */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que el contenedor */
+
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease;
+
+  z-index: 2;
+}
+
+/* Muestra la imagen secundaria al hacer hover */
+.gallery-item:hover::after {
+  opacity: 1; /* Muestra la imagen secundaria */
+}
