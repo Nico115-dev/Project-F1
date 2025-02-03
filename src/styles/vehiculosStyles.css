@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #001f3f, #000428);
+  color: white;
+  overflow-x: hidden;
+}
+
+.gallery-container {
+  margin-top: 10vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-title {
+  font-family: "Audiowide", serif;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: rgba(28, 28, 28, 0.5); /* Fondo más transparente */
+  backdrop-filter: blur(5px); /* Efecto de blur */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  max-height: 350px;
+  text-align: center;
+  color: white;
+}
+
+
+.gallery-item h4 {
+  font-family: "Audiowide", serif;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.vehicle-stats {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.vehicle-stats p {
+  margin: 5px 0;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #b30000, #004080); /* Rojo oscuro con azul oscuro */
+}
+
+.gallery-item:hover h4 {
+  color: #ffcc00; /* Color de texto en hover */
+}
+
+.gallery-item:hover .vehicle-stats {
+  background-color: rgba(0, 0, 0, 0.7); /* Cambio sutil del fondo en las estadísticas */
+}
+
+.modal {
+  
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente oscuro */
+  color: white;
+  padding: 30px;
+  width: 60%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.modal-content:hover {
+  background-color: rgba(0, 0, 0, 0.95); /* Sutil cambio en el hover */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.modal-content .f1-details {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.modal-content .f1-details p {
+  margin: 5px 0;
+}
+
+.gallery-item:hover img {
+  opacity: 0; /* Oculta la imagen principal al hacer hover */
+}
+
+.gallery-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: var(--imagen2);
+  background-size: contain; /* Asegura que la imagen se vea completa sin zoom */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que el contenedor */
+
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease;
+
+  z-index: 2;
+}
+.gallery-item:hover::after {
+  opacity: 1; /* Muestra la imagen secundaria */
+}
+
+/* Estilos para la sección de estadísticas en el modal */
+.stats-section {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.stats-section h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar .health {
+  background-color: #f44336; /* Rojo para salud */
+}
+
+.progress-bar .attack {
+  background-color: #4caf50; /* Verde para ataque */
+}
+
+.progress-bar .speed {
+  background-color: #ffeb3b; /* Amarillo para velocidad */
+}
+
+.modal-content .f1-details {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.modal-content .f1-details p {
+  margin: 5px 0;
+}
