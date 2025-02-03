@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000033 0%, #003366 100%);
+    color: white;
+    min-height: 100vh;
+    margin-top: 15vh;
+  
+  }
+  
+  /* Barra de navegación */
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Navegación */
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  nav a:hover {
+    color: #e10600; /* Color rojo F1 */
+  }
+  
+  /* Contenido principal */
+  .content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    
+    .title h1 {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      margin: 0;
+    }
+    
+    .title p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .btn-primary {
+      background-color: #ff0000;
+      color: white;
+    }
+    
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+    
+    .race-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .race-card {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+    
+    .race-card:hover {
+      border-color: rgba(248, 240, 240, 0.4);
+    }
+    
+    .race-info {
+      padding: 20px;
+    }
+    
+    .race-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    
+    .race-dates {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .race-month {
+      font-size: 16px;
+      margin-left: 5px;
+    }
+    
+    .race-flag {
+      font-size: 24px;
+    }
+    
+    .race-round {
+      color: #ff0000;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .race-country {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .race-country:hover {
+      color: #ff0000;
+    }
+    
+    .race-title {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 5px;
+    }
+    
+    .race-circuit {
+      height: 200px;
+      background-color: #111;
+      position: relative;
+      padding: 20px;
+    }
+    
+    .circuit-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #333 1px, transparent 1px),
+        linear-gradient(to bottom, #333 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.2;
+    }
+    
+    .circuit-image {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .buttons {
+        margin-top: 20px;
+      }
+    }
+    
+    
