@@ -5,7 +5,7 @@ class inicio extends HTMLElement {
     }
 
     connectedCallback(){
-        this.innerHTML =`
+        this.innerHTML = /*html*/`
      
         <div class="video-background">
              <video autoplay loop muted playsinline>

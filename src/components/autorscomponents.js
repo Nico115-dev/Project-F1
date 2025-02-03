@@ -5,7 +5,7 @@ class autos extends HTMLElement {
     }
 
     connectedCallback(){
-        this.innerHTML =`
+        this.innerHTML = /*html*/`
      
        <header class="nav-bar">
         <div class="logo">

@@ -16,6 +16,11 @@ class AdmPilotoComponent extends HTMLElement {
       <link rel="stylesheet" href="../../src/styles/admPiloto.css">
       <div class="container">
         <h2 class="title">Administración de Pilotos</h2>
+        <div class="button-group">
+        <button type="submit" class="btn save">Guardar</button>
+        <button type="button" id="edit-btn" class="btn edit">Editar</button>
+        <button type="button" id="delete-btn" class="btn delete">Eliminar</button>
+      </div>
         <form id="pilot-form" class="pilot-form">
           <input type="text" name="id" id="pilot-id" placeholder="ID (Asigna uno único)" required>
           <input type="text" name="nombre" id="pilot-name" placeholder="Nombre del piloto" required>
@@ -25,11 +30,7 @@ class AdmPilotoComponent extends HTMLElement {
           <input type="date" name="fechaNacimiento" id="pilot-birthdate" required>
           <input type="text" name="nacionalidad" id="pilot-nationality" placeholder="Nacionalidad" required>
           
-          <div class="button-group">
-            <button type="submit" class="btn save">Guardar</button>
-            <button type="button" id="edit-btn" class="btn edit">Editar</button>
-            <button type="button" id="delete-btn" class="btn delete">Eliminar</button>
-          </div>
+         
         </form>
       </div>
     `;
