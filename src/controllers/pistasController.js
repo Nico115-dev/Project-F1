@@ -38,7 +38,7 @@ function createRaceCard(race) {
             </div>
           </div>
           <div class="race-flag">${race.flag}</div>
-        </div>
+        </div>  
         <div class="race-country">${race.country}</div>
         <div class="race-title">
           ${race.title}<br>${race.subtitle}

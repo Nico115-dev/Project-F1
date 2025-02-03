@@ -13,10 +13,10 @@ class autos extends HTMLElement {
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Drivers</a></li>
+            <li><a href="../../src/views/menu.html">Home</a></li>
+                <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
                 <li><a href="#">Teams</a></li>
-                <li><a href="#">Circuitss</a></li>
+                <li><a href="../../src/views/pistas.html">Circuitss</a></li>
             </ul>
         </nav>
     </header>
