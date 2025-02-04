@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 /* Reset básico */
 * {
     margin: 0;
@@ -6,7 +8,7 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Audiowide", serif;
     background: linear-gradient(135deg, #000033 0%, #003366 100%);
     color: white;
     min-height: 100vh;
@@ -24,10 +26,19 @@
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1000;
+    height: 9vh;
   }
   
-  .logo img {
+  .logo{
+    font-family: "Audiowide", serif;
+    display: flex;
+    align-items: center;
     height: 40px;
+
+  }
+
+  .logo img {
+    height: 80px;
     width: auto;
   }
   
