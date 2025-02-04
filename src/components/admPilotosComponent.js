@@ -92,14 +92,28 @@ class AdmPilotosComponent extends HTMLElement {
 
   render() {
     this.innerHTML = /*html*/ `
-    <style>@import url("http://localhost:5502/src/styles/admPiloto.css");</style>
+    <style>@import url("http://localhost:5502/src/styles/admPiloto.css");
+            @import url("http://localhost:5502/src/styles/menu.css");
+    </style>
 
-      <header class="header">
-        <h1>Gestión de Pilotos</h1>
-      </header>
+    <header class="nav-bar">
+    <div class="logo">
+      <img src="../../src/img/image.png" alt="F1 Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../src/views/menu.html">Home</a></li>
+        <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
+        <li><a href="../../src/views/pilotos.html">Teams</a></li>
+        <li><a href="../../src/views/pistas.html">Circuits</a></li>
+      </ul>
+    </nav>
+  </header>
 
       <div class="nav-container">
+      
         <a class="nav-btn" data-target="create">➕ Crear</a>
+        <a class="nav-btn" data-target="edit">🖋️ Editar</a>
         <a class="nav-btn" data-target="delete">🗑 Eliminar</a>
         <a class="nav-btn" data-target="view">👀 Ver Pilotos</a>
       </div>
