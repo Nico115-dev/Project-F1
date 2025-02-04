@@ -17,6 +17,7 @@ class autos extends HTMLElement {
                 <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
                 <li><a href="../../src/views/Pilotos.html">Teams</a></li>
                 <li><a href="../../src/views/pistas.html">Circuitss</a></li>
+                <li><a href="../../src/views/tabla.html">Resultados</a></li>
             </ul>
         </nav>
     </header>

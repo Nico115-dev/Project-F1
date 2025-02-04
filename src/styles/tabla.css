@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center, #001F3F, #000428);
+    color: white;
+    margin: 0;
+    padding-top: 80px;
+  }
+  
+  .tabla-podios {
+    width: 80%;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #ff0000; /* Rojo brillante */
+  }
+  
+  /* Estilo de la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  td {
+    background-color: #222222;
+    color: white;
+  }
+  
+  /* Estilo para los logos de los equipos */
+  .logo-equipo {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain; 
+    margin-left: 0 !important;
+  }
+  
+  /* Estilos para las filas */
+  tr:nth-child(odd) {
+    background-color: #2d2d2d;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #333333;
+  }
+  
+  tr:hover {
+    background-color: #444444;
+    color: #ff4c00;
+  }
+  
+  td, th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
