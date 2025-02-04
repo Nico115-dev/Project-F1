@@ -79,11 +79,11 @@ class PodioF1 extends HTMLElement {
   `;  
   }
 }
+// Insertar el componente en el DOM
+// const container = document.getElementById('podiumContainer');
+// const podium = document.createElement('podio-f1');
+// container.appendChild(podium);
 
 // Registrar el componente como un custom element
 customElements.define('podio-f1', PodioF1);
 
-// Insertar el componente en el DOM
-const container = document.getElementById('podiumContainer');
-const podium = document.createElement('podio-f1');
-container.appendChild(podium);
