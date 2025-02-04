@@ -41,12 +41,9 @@ class VehiculosComponent extends HTMLElement {
   
         <!-- Información adicional -->
         <div class="f1-details" id="modal-description">
-          <p><strong>Nombre:</strong> Ferrari F1</p>
-          <p><strong>Modelo:</strong> 2023</p>
-          <p><strong>Fabricante:</strong> Ferrari</p>
+        
         </div>
   
-        <!-- Sección de estadísticas -->
         <div class="stats-section">
         
       </div>
