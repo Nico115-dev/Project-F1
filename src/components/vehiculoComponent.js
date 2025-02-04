@@ -25,7 +25,7 @@ class VehiculosComponent extends HTMLElement {
        <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
        <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
        <li><a href="../../src/views/pistas.html">Circuitos</a></li>
-       <li><a href="../../src/views/">Resultados</a></li>
+       <li><a href="../../src/views/tabla.html">Resultados</a></li>
       </ul>
     </nav>
   </header>
@@ -48,17 +48,7 @@ class VehiculosComponent extends HTMLElement {
   
         <!-- Sección de estadísticas -->
         <div class="stats-section">
-          <h5>Estadísticas del Vehículo:</h5>
-          <div class="progress-bar">
-            <div class="progress health" id="health-bar" style="width: 80%"></div> <!-- Barra de salud -->
-          </div>
-          <div class="progress-bar">
-            <div class="progress attack" id="attack-bar" style="width: 70%"></div> <!-- Barra de ataque -->
-          </div>
-          <div class="progress-bar">
-            <div class="progress speed" id="speed-bar" style="width: 90%"></div> <!-- Barra de velocidad -->
-          </div>
-        </div>
+        
       </div>
     </div>
     `;
