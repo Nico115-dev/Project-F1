@@ -289,3 +289,18 @@ body {
 .circle {
   animation: fillCircle 5s linear forwards; /* Ajusta 5s al tiempo que quieras para la animación */
 }
+
+.gallery-admin-pilot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnAdminPilot{
+  padding: 10px;
+  background-color: #b30000;
+  border-radius: 10px;
+  width: 10%;
+
+}
