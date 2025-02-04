@@ -1,83 +1,163 @@
-.container {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    background: #222;
-    padding: 20px;
-    border-radius: 8px;
-    color: white;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
-  }
 
-  body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #000033 0%, #003366 100%);
-    color: white;
-    min-height: 100vh;
-  }
-  
-  
-  .title {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ff0000;
-    margin-bottom: 15px;
-  }
-  
-  .pilot-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .pilot-form input {
-    padding: 8px;
-    border: 1px solid #ff0000;
-    border-radius: 4px;
-    background: #111;
-    color: white;
-  }
-  
-  .pilot-form input:focus {
-    outline: none;
-    border-color: #fff;
-  }
-  
-  .button-group {
-    margin-bottom: 3vh;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-  
-  .btn {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .btn.save {
-    background: #ff0000;
-    color: white;
-  }
-  
-  .btn.edit {
-    background: #ffa500;
-    color: white;
-  }
-  
-  .btn.delete {
-    background: #444;
-    color: white;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #000000 0%, #003366 100%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Navegación */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.nav-btn {
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 0 10px;
+
+
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #ff7b00;
+  transform: scale(1.05);
+}
+
+.nav-btn:active {
+  transform: scale(0.98);
+}
+
+/* Contenedor */
+.container {
+  padding: 40px 20px;
+  overflow: hidden;
+  height: calc(100vh - 120px);
+}
+
+/* Sección de contenido */
+.section {
+  display: none;
+  margin: 20px 0;
+}
+
+.section:not(.hidden) {
+  display: block;
+}
+
+/* Títulos */
+h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border: 2px solid #d83a00;
+  border-radius: 10px;
+  transition: border 0.3s;
+  background: #222;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff5500;
+}
+
+button[type="submit"] {
+  background: #d83a00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #ff5500;
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Lista de pilotos */
+#pilotosList {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#pilotosList li {
+  background: #1c1c1c;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#pilotosList li:hover {
+  background: #ff5500;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  font-size: 0.9rem;
+}
+
