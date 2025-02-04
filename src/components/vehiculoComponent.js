@@ -22,9 +22,10 @@ class VehiculosComponent extends HTMLElement {
     <nav>
       <ul>
         <li><a href="../../src/views/menu.html">Home</a></li>
-        <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
-        <li><a href="../../src/views/pilotos.html">Teams</a></li>
-        <li><a href="../../src/views/pistas.html">Circuits</a></li>
+       <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
+       <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
+       <li><a href="../../src/views/pistas.html">Circuitos</a></li>
+       <li><a href="../../src/views/">Resultados</a></li>
       </ul>
     </nav>
   </header>

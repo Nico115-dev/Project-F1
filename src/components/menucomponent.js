@@ -15,8 +15,9 @@ class menu extends HTMLElement {
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
-                <li><a href="../../src/views/Pilotos.html">Teams</a></li>
-                <li><a href="../../src/views/pistas.html">Circuitss</a></li>
+                <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
+                <li><a href="../../src/views/pistas.html">Circuitos</a></li>
+                <li><a href="../../src/views/">Resultados</a></li>
             </ul>
         </nav>
     </header>
