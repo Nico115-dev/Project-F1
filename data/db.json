@@ -296,7 +296,7 @@
   "circuitos": [
     {
       "round": "TESTING",
-      "type": "Seleccione...",
+      "type": "Testing",
       "date": "26-28",
       "month": "FEB",
       "country": "Sakhir",
@@ -305,8 +305,8 @@
       "subtitle": "TESTING 2025",
       "circuitImage": "../img/Japan carbon.avif",
       "longitud": "5.412 km",
-      "vueltas": "",
-      "descripcion": "",
+      "vueltas": "45",
+      "descripcion": "Esta es una buena pista\n",
       "id": "36bf"
     },
     {

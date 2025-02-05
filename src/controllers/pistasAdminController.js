@@ -13,7 +13,7 @@ function fetchAndRenderRaces() {
     .then(data => {
       console.log("Datos obtenidos de la API:", data);
 
-
+      
       const races = Array.isArray(data) ? data : [];
 
 

@@ -453,8 +453,8 @@ async function searchEdit() {
   document.getElementById("modalEdit").style.display = "block";
 }
 
-// Agregar el evento de búsqueda
-document.getElementById("searchButton").addEventListener("click", searchEdit);
+// // Agregar el evento de búsqueda
+// document.getElementById("searchButton").addEventListener("click", searchEdit);
 
 
 
