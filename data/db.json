@@ -218,6 +218,7 @@
   ],
   "circuitos": [
     {
+      "id": "36bf",
       "round": "TESTING",
       "type": "testing",
       "dates": "26-28",
@@ -233,22 +234,16 @@
         "año": 2019
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 2
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
+        {"temporada": 2021, "piloto": 1},
+        {"temporada": 2022, "piloto": 2},
+        {"temporada": 2023, "piloto": 1}
       ],
-      "id": "36bf"
+      "longitud": "5.412 km",
+      "numero_vueltas": 57,
+      "description": "Circuito de pruebas en Sakhir antes del inicio de la temporada."
     },
     {
+      "id": "9e17",
       "round": "ROUND 1",
       "type": "race",
       "dates": "14-16",
@@ -264,22 +259,16 @@
         "año": 2020
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 5
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
+        {"temporada": 2021, "piloto": 3},
+        {"temporada": 2022, "piloto": 5},
+        {"temporada": 2023, "piloto": 1}
       ],
-      "id": "9e17"
+      "longitud": "5.303 km",
+      "numero_vueltas": 58,
+      "description": "Uno de los circuitos más icónicos de la temporada, ubicado en Melbourne."
     },
     {
+      "id": "c5a2",
       "round": "ROUND 2",
       "type": "race",
       "dates": "21-23",
@@ -295,22 +284,16 @@
         "año": 2018
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
+        {"temporada": 2021, "piloto": 1},
+        {"temporada": 2022, "piloto": 1},
+        {"temporada": 2023, "piloto": 1}
       ],
-      "id": "c5a2"
+      "longitud": "5.451 km",
+      "numero_vueltas": 56,
+      "description": "Circuito moderno con una larga recta ideal para adelantamientos."
     },
     {
+      "id": "0566",
       "round": "ROUND 3",
       "type": "race",
       "dates": "04-06",
@@ -326,160 +309,13 @@
         "año": 2004
       },
       "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 2
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
+        {"temporada": 2021, "piloto": 2},
+        {"temporada": 2022, "piloto": 1},
+        {"temporada": 2023, "piloto": 1}
       ],
-      "id": "0566"
-    },
-    {
-      "round": "ROUND 4",
-      "type": "race",
-      "dates": "11-13",
-      "month": "APR",
-      "country": "Bahrain",
-      "flag": "🇧🇭",
-      "title": "FORMULA 1 BAHRAIN GRAND PRIX 2025",
-      "subtitle": "",
-      "circuitImage": "../img/Bahrain carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:10.540",
-        "piloto": "Valtteri Bottas",
-        "año": 2018
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "id": "26e5"
-    },
-    {
-      "round": "ROUND 5",
-      "type": "race",
-      "dates": "18-20",
-      "month": "APR",
-      "country": "Saudi Arabia",
-      "flag": "🇸🇦",
-      "title": "FORMULA 1 STC SAUDI ARABIAN GRAND",
-      "subtitle": "PRIX 2025",
-      "circuitImage": "../img/Saudi Arabia carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:39.283",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 3
-        }
-      ],
-      "id": "c4a6"
-    },
-    {
-      "round": "ROUND 6",
-      "type": "race",
-      "dates": "02-04",
-      "month": "MAY",
-      "country": "Miami",
-      "flag": "🇺🇸",
-      "title": "FORMULA 1 CRYPTO.COM MIAMI GRAND",
-      "subtitle": "PRIX 2025",
-      "circuitImage": "../img/Miami carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:30.983",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "id": "3146"
-    },
-    {
-      "round": "ROUND 7",
-      "type": "race",
-      "dates": "16-18",
-      "month": "MAY",
-      "country": "Emilia-Romagna",
-      "flag": "🇮🇹",
-      "title": "FORMULA 1 AWS GRAN PREMIO DEL",
-      "subtitle": "MADE IN ITALY E DELL&apos;EMILIA-ROMAGNA 2025",
-      "circuitImage": "../img/Australia carbon.png",
-      "record_vuelta": {
-        "tiempo": "1:30.983",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
-      "id": "8184"
-    },
-    {
-      "id": "b7d5",
-      "round": "",
-      "type": "",
-      "dates": "",
-      "month": "",
-      "country": "",
-      "flag": "",
-      "title": "",
-      "subtitle": "",
-      "circuitImage": "",
-      "lapTime": "",
-      "lapDriver": "",
-      "lapYear": "",
-      "Id": 276
+      "longitud": "5.807 km",
+      "numero_vueltas": 53,
+      "description": "Circuito técnico y desafiante con curvas icónicas como la 130R."
     }
   ],
   "vehiculos": [
