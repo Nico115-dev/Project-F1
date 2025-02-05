@@ -219,3 +219,98 @@ z-index: 1000;
   color: white;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}

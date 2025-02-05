@@ -12,7 +12,7 @@ class Circuitos extends HTMLElement {
           <style>
              @import url("http://localhost:5502/src/styles/menu.css");
           </style>
-      <<header class="nav-bar">
+      <header class="nav-bar">
           <div class="logo">
             <img src="../../src/img/image.png" alt="F1 Logo"> Administrador
         </div>
