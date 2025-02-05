@@ -1,12 +1,13 @@
 import { fetchAndRenderRaces } from "../../src/controllers/pistasController.js";
-import {crearPista} from "../../src/controllers/pistasAdminController.js";
+import {crearPista, obtenerNombresPistas,obtenerPistaPorId} from "../../src/controllers/pistasAdminController.js";
 
 class Circuitos extends HTMLElement {
   constructor() {
     super();
   }
 
-  connectedCallback() {
+  async connectedCallback() {
+  
     this.innerHTML = /*html*/ `
       <header class="nav-bar">
         <div class="logo">
@@ -130,8 +131,8 @@ class Circuitos extends HTMLElement {
           <form class="form-container">
             <div class="busquedaEdit">
               <div class="form-group">
-                <label for="roundPista">Name</label>
-                <select type="text" id="roundPista"></select>
+                <label for="selectNameEdit">Name</label>
+                <select type="text" id="selectNameEdit"></select>
               </div>
               <div class="form-group">
                 <button type="button" id="searchButton">Buscar</button>
@@ -213,26 +214,44 @@ class Circuitos extends HTMLElement {
           <span class="close" id="closeDeleteModal">x</span>
           <div class="busquedaEdit">
             <div class="form-group">
-              <label for="roundPista">Name</label>
-              <select type="text" id="roundPista"></select>
+              <label for="selectDelete">Name</label>
+              <select type="text" id="selectDelete"></select>
             </div>
           </div>
           <button type="submit" class="elimnar-btn">Eliminar</button>
         </div>
       </div>
     `;
+    eventosbtn();
+ 
+  }
+}
 
+async function eventosbtn() {
+    const btnEdirS = document.getElementById("searchButton");
+    btnEdirS.addEventListener("click", async() => {
+        searchEdit()
+    })
+
+ // Llamar la función cuando se haga clic en el botón de editar
+document.getElementById("editRaceBtn").addEventListener("click", async () => {
+    await fillEditSelect();
+    await obtenerNombresPistas();
+
+    document.getElementById("modalEdit").style.display = "block";
+});
     fetchAndRenderRaces();
     const saveBtn = document.getElementById("btnGuardar");
     saveBtn.addEventListener("click", (event)=>{
         event.preventDefault(); 
         const data = handleSaveClick();
-        console.log(data);
+        console.log(JSON.stringify(data));
         crearPista(data)
         .then(response => console.log("Pista creada:", response))
          .catch(error => console.error("Error en la creación:", error));
+
+       
     });
-  }
 }
 
 customElements.define('circuitos-d', Circuitos);
@@ -304,6 +323,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+  async function fillEditSelect() {
+    try {
+        const pistas = await obtenerNombresPistas(); // Obtiene la lista de nombres de pistas
+        const selectEdit = document.getElementById("selectNameEdit"); // Selecciona el <select> del modal de edición
+
+        // Limpiar opciones previas
+        selectEdit.innerHTML = "<option value=''>Seleccione...</option>";
+
+        // Agregar opciones dinámicamente
+        pistas.forEach((pista) => {
+            const option = document.createElement("option");
+            option.value = pista.id; 
+            option.textContent = pista.title; 
+            selectEdit.appendChild(option);
+        });
+
+    } catch (error) {
+        console.error("Error obteniendo nombres de pistas:", error);
+    }
+}
+
   function handleSaveClick() {
     return {
       round: document.getElementById("roundPista").value,
@@ -319,6 +359,26 @@ document.addEventListener("DOMContentLoaded", () => {
       vueltas: document.getElementById("vueltasPista").value,
       descripcion: document.getElementById("descripcionPista").value,
     };
+  }
+
+async function searchEdit ( ){
+    const idPistaEdit = document.getElementById("selectNameEdit").value;
+    const dataGetEdit =await  obtenerPistaPorId(idPistaEdit);
+    console.log("aaa", dataGetEdit);
+    const typePista =  document.getElementById("typePista")
+    const roundPista= document.getElementById("roundPista")
+    const  datesPitas= document.getElementById("datesPista")
+    const month= document.getElementById("monthPista")
+    const conutry= document.getElementById("countryPista")
+    const flag= document.getElementById("flagPista")
+    const titlePista= document.getElementById("titlePista")
+    const subtitle= document.getElementById("subtitlePista")
+    const imagen= document.getElementById("circuitImgPista")
+    const longitud= document.getElementById("longitudPista")
+    const vueltas= document.getElementById("vueltasPista")
+    const desc= document.getElementById("descripcionPista")
+
+    typePista.value=  JSON.stringify(dataGetEdit).round
   }
   
 

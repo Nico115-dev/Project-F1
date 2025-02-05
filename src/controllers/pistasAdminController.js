@@ -105,6 +105,22 @@ export async function obtenerPistas() {
   }
 }
 
+export async function obtenerNombresPistas() {
+  try {
+    alert("Entra aquí");
+    const data = await obtenerPistas(); // Obtener datos
+    const pistas = data.map(pista => ({
+      id: pista.id,
+      title: pista.title
+    }));
+    return pistas;
+  } catch (error) {
+    console.error("Error al obtener nombres:", error);
+    return []; // Devuelve un array vacío en caso de error
+  }
+}
+
+
 // Obtener una pista por su ID
 export async function obtenerPistaPorId(id) {
   try {

@@ -1151,3 +1151,7 @@ z-index: 1000;
   color: white;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
 }
+
+#selectNameEdit{
+  background-color: #353535;
+}
