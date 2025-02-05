@@ -69,6 +69,7 @@ class PilotosComponent extends HTMLElement {
 
       <div id="modal" class="modal">
         <div class="modal-content">
+          <img id="pilot-img" src="" alt="Imagen del piloto" class="modal-img"> <!-- Imagen del piloto -->
           <h2 id="pilot-name"></h2>
           <p><strong>Equipo:</strong> <span id="pilot-team"></span></p>
           <p><strong>Rol:</strong> <span id="pilot-role"></span></p>
@@ -129,7 +130,6 @@ class PilotosComponent extends HTMLElement {
     // Mostrar el botón para ver todos los equipos
     showAllBtn.style.display = "block";
   }
-  
 
   showPilotModal(pilot) {
     const modal = this.querySelector("#modal");
@@ -138,12 +138,14 @@ class PilotosComponent extends HTMLElement {
     const pilotRole = this.querySelector("#pilot-role");
     const pilotBirthdate = this.querySelector("#pilot-birthdate");
     const pilotNationality = this.querySelector("#pilot-nationality");
+    const pilotImg = this.querySelector("#pilot-img"); // Imagen del piloto
 
     pilotName.textContent = pilot.nombre;
     pilotTeam.textContent = pilot.equipo;
     pilotRole.textContent = pilot.rol;
     pilotBirthdate.textContent = pilot["fecha de nacimiento"];
     pilotNationality.textContent = pilot.Nacionalidad;
+    pilotImg.src = pilot.imagen; // Asignamos la imagen del piloto
     modal.style.display = "flex";
   }
 
