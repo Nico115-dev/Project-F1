@@ -182,39 +182,86 @@
     }
  
   ],
-  "equipos": [
+"equipos": [
     {
       "nombre": "Red Bull Racing",
       "pais": "Austria",
       "motor": "Honda",
-      "pilotos": [
-        1,
-        2
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Red_Bull_Racing_Logo.svg",
+      "pilotos": [1, 2],
+      "logo": "https://cdn-3.motorsport.com/images/mgl/Y99JQRbY/s8/red-bull-racing-logo-1.jpg",
       "id": "9a8a"
     },
     {
       "nombre": "Mercedes-AMG Petronas",
       "pais": "Alemania",
       "motor": "Mercedes",
-      "pilotos": [
-        3,
-        4
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mercedes_AMG_Petronas_F1_Team_logo.svg",
+      "pilotos": [3, 4],
+      "logo": "https://seeklogo.com/images/M/mercedes-amg-f1-logo-1ED622D95E-seeklogo.com.png",
       "id": "3e3a"
     },
     {
       "nombre": "Ferrari",
       "pais": "Italia",
       "motor": "Ferrari",
-      "pilotos": [
-        5,
-        6
-      ],
-      "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d4/Scuderia_Ferrari_Logo.svg",
+      "pilotos": [5, 6],
+      "logo": "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515318_10187.png",
       "id": "15d3"
+    },
+    {
+      "nombre": "McLaren",
+      "pais": "Reino Unido",
+      "motor": "Mercedes",
+      "pilotos": [7, 8],
+      "logo": "https://cdn-1.motorsport.com/images/mgl/YEQJgyLY/s800/mclaren-f1-team-logo-1.jpg",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "Aston Martin",
+      "pais": "Reino Unido",
+      "motor": "Mercedes",
+      "pilotos": [9, 10],
+      "logo": "https://cdn-5.motorsport.com/images/mgl/0rGRlkm2/s8/aston-martin-logo-2022-1.jpg",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "Alpine",
+      "pais": "Francia",
+      "motor": "Renault",
+      "pilotos": [11, 12],
+      "logo": "https://fbi.cults3d.com/uploaders/15119367/illustration-file/66644f56-347e-4b28-8fbd-b95ebe714814/img-95086.jpg",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "Kick Sauber",
+      "pais": "Suiza",
+      "motor": "Ferrari",
+      "pilotos": [13, 14],
+      "logo": "https://www.sopitas.com/wp-content/uploads/2024/01/stake-f1-team-sauber.jpg",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "Haas",
+      "pais": "Estados Unidos",
+      "motor": "Ferrari",
+      "pilotos": [15, 16],
+      "logo": "https://cdn.mos.cms.futurecdn.net/uuQxV8xeSFh3PpnuzAyKKV.png",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "AlphaTauri",
+      "pais": "Italia",
+      "motor": "Honda",
+      "pilotos": [17, 18],
+      "logo": "https://external-preview.redd.it/7fW_kMYXlBMW2hCp-0SOK5vdlSpc57U50tK6ZyOzGPo.jpg?auto=webp&s=faa99261816d162c70214a897c89f41c606dad3c",
+      "id": "3e3a"
+    },
+    {
+      "nombre": "Williams",
+      "pais": "Reino Unido",
+      "motor": "Mercedes",
+      "pilotos": [19, 20],
+      "logo": "https://cdn-1.motorsport.com/images/mgl/2y39NBy6/s8/williams-racing-logo-1.jpg",
+      "id": "3e3a"
     }
   ],
   "circuitos": [
