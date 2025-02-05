@@ -436,7 +436,7 @@
       "equipo": "Red Bull Racing",
       "modelo": "RB20",
       "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
+      "velocidad_maxima_kmh": 355,
       "aceleracion_0_100": 2.5,
       "pilotos": [
         1,
@@ -491,7 +491,7 @@
       "equipo": "Mercedes-AMG Petronas",
       "modelo": "W15",
       "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
+      "velocidad_maxima_kmh": 350,
       "aceleracion_0_100": 2.6,
       "pilotos": [
         3,
@@ -543,11 +543,11 @@
       "id": "2e14"
     },
     {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
-      "aceleracion_0_100": 2.5,
+      "equipo": "Ferrari",
+      "modelo": "SF-24",
+      "motor": "Ferrari",
+      "velocidad_maxima_kmh": 352,
+      "aceleracion_0_100": 2.6,
       "pilotos": [
         1,
         2
@@ -593,16 +593,16 @@
           }
         }
       },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
+      "imagen1": "../src/img/Ferrari.png",
+      "imagen2": "../src/img/FerrariLD.png",
       "id": "2417"
     },
     {
-      "equipo": "Mercedes-AMG Petronas",
-      "modelo": "W15",
+      "equipo": "McLaren",
+      "modelo": "MCL38",
       "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.6,
+      "velocidad_maxima_kmh": 345,
+      "aceleracion_0_100": 2.7,
       "pilotos": [
         3,
         4
@@ -648,16 +648,16 @@
           }
         }
       },
-      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
-      "imagen2": "../src/img/w15Lado-removebg-preview.png",
+      "imagen1": "../src/img/MclarenFront.png",
+      "imagen2": "../src/img/MclarenLD.png",
       "id": "7c10"
     },
     {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
-      "aceleracion_0_100": 2.5,
+      "equipo": "Aston Martin",
+      "modelo": "AMR24",
+      "motor": "Mercedes",
+      "velocidad_maxima_kmh": 347,
+      "aceleracion_0_100": 2.7,
       "pilotos": [
         1,
         2
@@ -703,16 +703,16 @@
           }
         }
       },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
+      "imagen1": "../src/img/AstonFront.png",
+      "imagen2": "../src/img/AstonLD.png",
       "id": "bcfa"
     },
     {
-      "equipo": "Mercedes-AMG Petronas",
-      "modelo": "W15",
-      "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.6,
+      "equipo": "Alpine",
+      "modelo": "A524",
+      "motor": "Renault",
+      "velocidad_maxima_kmh": 342,
+      "aceleracion_0_100": 2.8,
       "pilotos": [
         3,
         4
@@ -758,16 +758,16 @@
           }
         }
       },
-      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
-      "imagen2": "../src/img/w15Lado-removebg-preview.png",
+      "imagen1": "../src/img/AlpineFront.png",
+      "imagen2": "../src/img/AlpineLD.png",
       "id": "ba42"
     },
     {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
-      "aceleracion_0_100": 2.5,
+      "equipo": "Williams",
+      "modelo": "FW46",
+      "motor": "Mercedes",
+      "velocidad_maxima_kmh": 340,
+      "aceleracion_0_100": 2.8,
       "pilotos": [
         1,
         2
@@ -813,16 +813,16 @@
           }
         }
       },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
+      "imagen1": "../src/img/WilliamsFront.png",
+      "imagen2": "../src/img/WilliamsLD.png",
       "id": "624c"
     },
     {
-      "equipo": "Mercedes-AMG Petronas",
-      "modelo": "W15",
-      "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.6,
+      "equipo": "AlphaTauri",
+      "modelo": "AT02",
+      "motor": "Honda",
+      "velocidad_maxima_kmh": 338,
+      "aceleracion_0_100": 2.9,
       "pilotos": [
         3,
         4
@@ -868,16 +868,16 @@
           }
         }
       },
-      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
-      "imagen2": "../src/img/w15Lado-removebg-preview.png",
+      "imagen1": "../src/img/AlphaFront.png",
+      "imagen2": "../src/img/AlphaLD.png",
       "id": "cf00"
     },
     {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
-      "aceleracion_0_100": 2.5,
+      "equipo": "Alfa Romeo (Stake F1 Team)",
+      "modelo": "C44",
+      "motor": "Ferrari",
+      "velocidad_maxima_kmh": 336,
+      "aceleracion_0_100": 2.9,
       "pilotos": [
         1,
         2
@@ -923,16 +923,16 @@
           }
         }
       },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
+      "imagen1": "../src/img/AlfaFront.png",
+      "imagen2": "../src/img/AlfaLD.png",
       "id": "3a7e"
     },
     {
-      "equipo": "Mercedes-AMG Petronas",
-      "modelo": "W15",
-      "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.6,
+      "equipo": "Haas",
+      "modelo": "VF-24",
+      "motor": "Ferrari",
+      "velocidad_maxima_kmh": 334,
+      "aceleracion_0_100": 3.0,
       "pilotos": [
         3,
         4
@@ -978,119 +978,9 @@
           }
         }
       },
-      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
-      "imagen2": "../src/img/w15Lado-removebg-preview.png",
+      "imagen1": "../src/img/HaasFront.png",
+      "imagen2": "../src/img/HaasLD.png",
       "id": "88b4"
-    },
-    {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 360,
-      "aceleracion_0_100": 2.5,
-      "pilotos": [
-        1,
-        2
-      ],
-      "rendimiento": {
-        "conduccion_normal": {
-          "velocidad_promedio_kmh": 320,
-          "consumo_combustible": {
-            "seco": 1.9,
-            "lluvioso": 2.1,
-            "extremo": 2.4
-          },
-          "desgaste_neumaticos": {
-            "seco": 1.5,
-            "lluvioso": 0.8,
-            "extremo": 2.5
-          }
-        },
-        "conduccion_agresiva": {
-          "velocidad_promedio_kmh": 340,
-          "consumo_combustible": {
-            "seco": 2.4,
-            "lluvioso": 2.6,
-            "extremo": 3
-          },
-          "desgaste_neumaticos": {
-            "seco": 2.2,
-            "lluvioso": 1.2,
-            "extremo": 3.5
-          }
-        },
-        "ahorro_combustible": {
-          "velocidad_promedio_kmh": 300,
-          "consumo_combustible": {
-            "seco": 1.6,
-            "lluvioso": 1.8,
-            "extremo": 2.1
-          },
-          "desgaste_neumaticos": {
-            "seco": 1,
-            "lluvioso": 0.5,
-            "extremo": 1.8
-          }
-        }
-      },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
-      "id": "bce9"
-    },
-    {
-      "equipo": "Mercedes-AMG Petronas",
-      "modelo": "W15",
-      "motor": "Mercedes",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.6,
-      "pilotos": [
-        3,
-        4
-      ],
-      "rendimiento": {
-        "conduccion_normal": {
-          "velocidad_promedio_kmh": 315,
-          "consumo_combustible": {
-            "seco": 2,
-            "lluvioso": 2.2,
-            "extremo": 2.5
-          },
-          "desgaste_neumaticos": {
-            "seco": 1.6,
-            "lluvioso": 0.9,
-            "extremo": 2.6
-          }
-        },
-        "conduccion_agresiva": {
-          "velocidad_promedio_kmh": 335,
-          "consumo_combustible": {
-            "seco": 2.6,
-            "lluvioso": 2.8,
-            "extremo": 3.2
-          },
-          "desgaste_neumaticos": {
-            "seco": 2.3,
-            "lluvioso": 1.4,
-            "extremo": 3.8
-          }
-        },
-        "ahorro_combustible": {
-          "velocidad_promedio_kmh": 295,
-          "consumo_combustible": {
-            "seco": 1.7,
-            "lluvioso": 1.9,
-            "extremo": 2.2
-          },
-          "desgaste_neumaticos": {
-            "seco": 1.1,
-            "lluvioso": 0.6,
-            "extremo": 1.9
-          }
-        }
-      },
-      "imagen1": "../src/img/w15Defrente-removebg-preview.png",
-      "imagen2": "../src/img/w15Lado-removebg-preview.png",
-      "id": "f5c0"
     }
   ]
 }
