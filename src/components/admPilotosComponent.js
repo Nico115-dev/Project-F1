@@ -158,14 +158,13 @@ class AdmPilotosComponent extends HTMLElement {
           <input type="text" id="paisPiloto">
         </div>
 
-        <button type="submit" class="submit-btn" id = "btnGuardar">Guardar</button>
 
 
     `;
   }
 }
 
-customElements.define("adm-pilotos-form", AdmPilotosComponent);
+
       // <!-- Modal Editar -->
       // <div id="modalEdit" class="modal">
       //   <div class="modal-content">
@@ -185,3 +184,4 @@ customElements.define("adm-pilotos-form", AdmPilotosComponent);
       //     <button type="button" id="closeModalDelete" class="close-btn">Cerrar</button>
       //   </div>
       // </div>
+customElements.define("adm-pilotos-form", AdmPilotosComponent);
