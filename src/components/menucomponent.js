@@ -55,7 +55,7 @@ class menu extends HTMLElement {
                     </div>
 
                     <div class="cards-container">
-                        <a href="" class="card">INICIAR SIMULACION</a>
+                        <a href="../../src/views/simulacion.html" class="card">INICIAR SIMULACION</a>
                         <a href="../../src/views/vehiculos.html" class="card">VEHÍCULOS</a>
                         <a href="../../src/views/Pilotos.html" class="card">PILOTOS</a>
                     </div>
