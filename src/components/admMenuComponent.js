@@ -6,9 +6,9 @@ class menuAdm extends HTMLElement {
 
     connectedCallback(){
         this.innerHTML = /*html*/`
-
+            
           <header class="nav-bar">
-        <div class="logo">
+          <div class="logo">
             <img src="../../src/img/image.png" alt="F1 Logo"> Administrador
         </div>
         <nav>

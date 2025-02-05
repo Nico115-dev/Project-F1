@@ -13,8 +13,6 @@ class AdmPilotosComponent extends HTMLElement {
     @import url("http://localhost:5502/src/styles/vehiculosStyles.css");
     @import url("http://localhost:5502/src/styles/menu.css");
   </style>
- 
-      <!-- Los elementos de la galería se generarán dinámicamente con JavaScript -->
     </div>
   </div>
   <header class="nav-bar">

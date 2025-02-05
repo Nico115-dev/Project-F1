@@ -1,6 +1,6 @@
-/* Estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap"); 
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Audiowide', sans-serif;
     background: radial-gradient(circle at center, #001F3F, #000428);
     color: white;
     margin: 0;

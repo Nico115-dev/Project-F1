@@ -6,17 +6,19 @@ class autos extends HTMLElement {
 
     connectedCallback(){
         this.innerHTML = /*html*/`
-     
+        <style>
+        @import url("http://localhost:5502/src/styles/menu.css");
+        </style>
        <header class="nav-bar">
-        <div class="logo">
-            <img src="../img/image.png" alt="F1 Logo">
+       <div class="logo">
+            <img src="../../src/img/image.png" alt="F1 Logo"> 
         </div>
         <nav>
             <ul>
             <li><a href="../../src/views/menu.html">Home</a></li>
                 <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
                 <li><a href="../../src/views/Pilotos.html">Teams</a></li>
-                <li><a href="../../src/views/pistas.html">Circuitss</a></li>
+                <li><a href="../../src/views/pistas.html">Circuitos</a></li>
                 <li><a href="../../src/views/tabla.html">Resultados</a></li>
             </ul>
         </nav>

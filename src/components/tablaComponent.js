@@ -32,7 +32,7 @@ class PodioF1 extends HTMLElement {
         points: 15
       }
     ];
-    this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = /*html*/`
     <style>
       @import url("http://localhost:5502/src/styles/tabla.css");
       @import url("http://localhost:5502/src/styles/menu.css");
@@ -45,8 +45,8 @@ class PodioF1 extends HTMLElement {
         <ul>
           <li><a href="../../src/views/menu.html">Home</a></li>
           <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
-          <li><a href="../../src/views/pilotos.html">Teams</a></li>
-          <li><a href="../../src/views/pistas.html">Circuits</a></li>
+          <li><a href="../../src/views/pilotos.html">Equipos</a></li>
+          <li><a href="../../src/views/pistas.html">Circuitos</a></li>
           <li><a href="../../src/views/tabla.html">Resultados</a></li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Audiowide', sans-serif;
     margin: 0;
     padding: 0;
     background: radial-gradient(circle at center, #001f3f, #000428);

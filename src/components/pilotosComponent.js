@@ -47,8 +47,8 @@ class PilotosComponent extends HTMLElement {
           <ul>
             <li><a href="../../src/views/menu.html">Home</a></li>
             <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
-            <li><a href="../../src/views/Pilotos.html">Teams</a></li>
-            <li><a href="../../src/views/pistas.html">Circuits</a></li>
+            <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
+            <li><a href="../../src/views/pistas.html">Circuitos</a></li>
             <li><a href="../../src/views/tabla.html">Resultados</a></li>
           </ul>
         </nav>
@@ -145,7 +145,7 @@ class PilotosComponent extends HTMLElement {
     pilotRole.textContent = pilot.rol;
     pilotBirthdate.textContent = pilot["fecha de nacimiento"];
     pilotNationality.textContent = pilot.Nacionalidad;
-    pilotImg.src = pilot.imagen; // Asignamos la imagen del piloto
+    pilotImg.src = pilot.imagen; 
     modal.style.display = "flex";
   }
 
