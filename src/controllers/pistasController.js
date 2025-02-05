@@ -1,5 +1,5 @@
 
-function fetchAndRenderRaces() {
+export function fetchAndRenderRaces() {
   fetch('http://localhost:4000/circuitos')
     .then(response => {
       if (!response.ok) {

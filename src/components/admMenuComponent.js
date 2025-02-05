@@ -16,7 +16,7 @@ class menuAdm extends HTMLElement {
                 <li><a href="#">Home</a></li>
                 <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
                 <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
-                <li><a href="../../src/views/pistas.html">Circuitos</a></li>
+                <li><a href="../../src/views/PistasAdmin.html">Circuitos</a></li>
                 <li><a href="../../src/views/tabla.html">Resultados</a></li>
             </ul>
         </nav>

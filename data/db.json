@@ -1,7 +1,7 @@
 {
   "pilotos": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Max Verstappen",
       "equipo": "Red Bull Racing",
       "rol": "Líder",
@@ -10,7 +10,7 @@
       "Nacionalidad": "Belga"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Sergio Pérez",
       "equipo": "Red Bull Racing",
       "rol": "Escudero",
@@ -19,7 +19,7 @@
       "Nacionalidad": "Mexicano"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Lewis Hamilton",
       "equipo": "Mercedes-AMG Petronas",
       "rol": "Líder",
@@ -28,7 +28,7 @@
       "Nacionalidad": "Britanico"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "George Russell",
       "equipo": "Mercedes-AMG Petronas",
       "rol": "Escudero",
@@ -37,7 +37,7 @@
       "Nacionalidad": "Britanico"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Charles Leclerc",
       "equipo": "Ferrari",
       "rol": "Líder",
@@ -46,7 +46,7 @@
       "Nacionalidad": "Monegasco"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Carlos Sainz",
       "equipo": "Ferrari",
       "rol": "Escudero",
@@ -55,7 +55,7 @@
       "Nacionalidad": "Español"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "Lando Norris",
       "equipo": "McLaren",
       "rol": "Líder",
@@ -64,7 +64,7 @@
       "Nacionalidad": "Britanico"
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Oscar Piastri",
       "equipo": "McLaren",
       "rol": "Escudero",
@@ -73,7 +73,7 @@
       "Nacionalidad": "Australiano"
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "Fernando Alonso",
       "equipo": "Aston Martin",
       "rol": "Líder",
@@ -82,7 +82,7 @@
       "Nacionalidad": "Español"
     },
     {
-      "id": 10,
+      "id": "10",
       "nombre": "Lance Stroll",
       "equipo": "Aston Martin",
       "rol": "Escudero",
@@ -91,7 +91,7 @@
       "Nacionalidad": "Canadiense"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "Esteban Ocon",
       "equipo": "Alpine",
       "rol": "Líder",
@@ -100,7 +100,7 @@
       "Nacionalidad": "Frances"
     },
     {
-      "id": 12,
+      "id": "12",
       "nombre": "Pierre Gasly",
       "equipo": "Alpine",
       "rol": "Escudero",
@@ -109,7 +109,7 @@
       "Nacionalidad": "Frances"
     },
     {
-      "id": 13,
+      "id": "13",
       "nombre": "Valtteri Bottas",
       "equipo": "Kick Sauber",
       "rol": "Líder",
@@ -118,7 +118,7 @@
       "Nacionalidad": "Finlandes"
     },
     {
-      "id": 14,
+      "id": "14",
       "nombre": "Zhou Guanyu",
       "equipo": "Kick Sauber",
       "rol": "Escudero",
@@ -127,7 +127,7 @@
       "Nacionalidad": "Chino"
     },
     {
-      "id": 15,
+      "id": "15",
       "nombre": "Kevin Magnussen",
       "equipo": "Haas",
       "rol": "Líder",
@@ -136,7 +136,7 @@
       "Nacionalidad": "Danés"
     },
     {
-      "id": 16,
+      "id": "16",
       "nombre": "Nico Hülkenberg",
       "equipo": "Haas",
       "rol": "Escudero",
@@ -145,7 +145,7 @@
       "Nacionalidad": "Aleman"
     },
     {
-      "id": 17,
+      "id": "17",
       "nombre": "Yuki Tsunoda",
       "equipo": "AlphaTauri",
       "rol": "Líder",
@@ -154,7 +154,7 @@
       "Nacionalidad": "Japones"
     },
     {
-      "id": 18,
+      "id": "18",
       "nombre": "Daniel Ricciardo",
       "equipo": "AlphaTauri",
       "rol": "Escudero",
@@ -163,7 +163,7 @@
       "Nacionalidad": "Australiano"
     },
     {
-      "id": 19,
+      "id": "19",
       "nombre": "Alexander Albon",
       "equipo": "Williams",
       "rol": "Líder",
@@ -172,7 +172,7 @@
       "Nacionalidad": "Britanico"
     },
     {
-      "id": 20,
+      "id": "20",
       "nombre": "Logan Sargeant",
       "equipo": "Williams",
       "rol": "Escudero",
@@ -180,14 +180,16 @@
       "fecha de nacimiento": "31/12/2000",
       "Nacionalidad": "Estadounidense"
     }
- 
   ],
-"equipos": [
+  "equipos": [
     {
       "nombre": "Red Bull Racing",
       "pais": "Austria",
       "motor": "Honda",
-      "pilotos": [1, 2],
+      "pilotos": [
+        1,
+        2
+      ],
       "logo": "https://cdn-3.motorsport.com/images/mgl/Y99JQRbY/s8/red-bull-racing-logo-1.jpg",
       "id": "9a8a"
     },
@@ -195,7 +197,10 @@
       "nombre": "Mercedes-AMG Petronas",
       "pais": "Alemania",
       "motor": "Mercedes",
-      "pilotos": [3, 4],
+      "pilotos": [
+        3,
+        4
+      ],
       "logo": "https://seeklogo.com/images/M/mercedes-amg-f1-logo-1ED622D95E-seeklogo.com.png",
       "id": "3e3a"
     },
@@ -203,7 +208,10 @@
       "nombre": "Ferrari",
       "pais": "Italia",
       "motor": "Ferrari",
-      "pilotos": [5, 6],
+      "pilotos": [
+        5,
+        6
+      ],
       "logo": "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515318_10187.png",
       "id": "15d3"
     },
@@ -211,7 +219,10 @@
       "nombre": "McLaren",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [7, 8],
+      "pilotos": [
+        7,
+        8
+      ],
       "logo": "https://cdn-1.motorsport.com/images/mgl/YEQJgyLY/s800/mclaren-f1-team-logo-1.jpg",
       "id": "3e3a"
     },
@@ -219,7 +230,10 @@
       "nombre": "Aston Martin",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [9, 10],
+      "pilotos": [
+        9,
+        10
+      ],
       "logo": "https://cdn-5.motorsport.com/images/mgl/0rGRlkm2/s8/aston-martin-logo-2022-1.jpg",
       "id": "3e3a"
     },
@@ -227,7 +241,10 @@
       "nombre": "Alpine",
       "pais": "Francia",
       "motor": "Renault",
-      "pilotos": [11, 12],
+      "pilotos": [
+        11,
+        12
+      ],
       "logo": "https://fbi.cults3d.com/uploaders/15119367/illustration-file/66644f56-347e-4b28-8fbd-b95ebe714814/img-95086.jpg",
       "id": "3e3a"
     },
@@ -235,7 +252,10 @@
       "nombre": "Kick Sauber",
       "pais": "Suiza",
       "motor": "Ferrari",
-      "pilotos": [13, 14],
+      "pilotos": [
+        13,
+        14
+      ],
       "logo": "https://www.sopitas.com/wp-content/uploads/2024/01/stake-f1-team-sauber.jpg",
       "id": "3e3a"
     },
@@ -243,7 +263,10 @@
       "nombre": "Haas",
       "pais": "Estados Unidos",
       "motor": "Ferrari",
-      "pilotos": [15, 16],
+      "pilotos": [
+        15,
+        16
+      ],
       "logo": "https://cdn.mos.cms.futurecdn.net/uuQxV8xeSFh3PpnuzAyKKV.png",
       "id": "3e3a"
     },
@@ -251,7 +274,10 @@
       "nombre": "AlphaTauri",
       "pais": "Italia",
       "motor": "Honda",
-      "pilotos": [17, 18],
+      "pilotos": [
+        17,
+        18
+      ],
       "logo": "https://external-preview.redd.it/7fW_kMYXlBMW2hCp-0SOK5vdlSpc57U50tK6ZyOzGPo.jpg?auto=webp&s=faa99261816d162c70214a897c89f41c606dad3c",
       "id": "3e3a"
     },
@@ -259,13 +285,17 @@
       "nombre": "Williams",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [19, 20],
+      "pilotos": [
+        19,
+        20
+      ],
       "logo": "https://cdn-1.motorsport.com/images/mgl/2y39NBy6/s8/williams-racing-logo-1.jpg",
       "id": "3e3a"
     }
   ],
   "circuitos": [
     {
+      "id": "36bf",
       "round": "TESTING",
       "type": "testing",
       "dates": "26-28",
@@ -293,9 +323,13 @@
           "temporada": 2023,
           "piloto": 1
         }
-      ]
+      ],
+      "longitud": "5.412 km",
+      "numero_vueltas": 57,
+      "description": "Circuito de pruebas en Sakhir antes del inicio de la temporada."
     },
     {
+      "id": "9e17",
       "round": "ROUND 1",
       "type": "race",
       "dates": "14-16",
@@ -323,9 +357,13 @@
           "temporada": 2023,
           "piloto": 1
         }
-      ]
+      ],
+      "longitud": "5.303 km",
+      "numero_vueltas": 58,
+      "description": "Uno de los circuitos más icónicos de la temporada, ubicado en Melbourne."
     },
     {
+      "id": "c5a2",
       "round": "ROUND 2",
       "type": "race",
       "dates": "21-23",
@@ -353,9 +391,13 @@
           "temporada": 2023,
           "piloto": 1
         }
-      ]
+      ],
+      "longitud": "5.451 km",
+      "numero_vueltas": 56,
+      "description": "Circuito moderno con una larga recta ideal para adelantamientos."
     },
     {
+      "id": "0566",
       "round": "ROUND 3",
       "type": "race",
       "dates": "04-06",
@@ -383,127 +425,40 @@
           "temporada": 2023,
           "piloto": 1
         }
-      ]
+      ],
+      "longitud": "5.807 km",
+      "numero_vueltas": 53,
+      "description": "Circuito técnico y desafiante con curvas icónicas como la 130R."
     },
     {
-      "round": "ROUND 4",
-      "type": "race",
-      "dates": "11-13",
-      "month": "APR",
-      "country": "Bahrain",
-      "flag": "🇧🇭",
-      "title": "FORMULA 1 BAHRAIN GRAND PRIX 2025",
+      "id": "72f8",
+      "round": "",
+      "type": "Seleccione...",
+      "date": "",
+      "month": "",
+      "country": "",
+      "flag": "",
+      "title": "",
       "subtitle": "",
-      "circuitImage": "../img/Bahrain carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:10.540",
-        "piloto": "Valtteri Bottas",
-        "año": 2018
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ]
+      "circuitImg": "",
+      "longitud": "",
+      "vueltas": "",
+      "descripcion": ""
     },
     {
-      "round": "ROUND 5",
-      "type": "race",
-      "dates": "18-20",
-      "month": "APR",
-      "country": "Saudi Arabia",
-      "flag": "🇸🇦",
-      "title": "FORMULA 1 STC SAUDI ARABIAN GRAND",
-      "subtitle": "PRIX 2025",
-      "circuitImage": "../img/Saudi Arabia carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:39.283",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 3
-        }
-      ]
-    },
-    {
-      "round": "ROUND 6",
-      "type": "race",
-      "dates": "02-04",
-      "month": "MAY",
-      "country": "Miami",
-      "flag": "🇺🇸",
-      "title": "FORMULA 1 CRYPTO.COM MIAMI GRAND",
-      "subtitle": "PRIX 2025",
-      "circuitImage": "../img/Miami carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:30.983",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ]
-    },
-    {
-      "round": "ROUND 7",
-      "type": "race",
-      "dates": "16-18",
-      "month": "MAY",
-      "country": "Emilia-Romagna",
-      "flag": "🇮🇹",
-      "title": "FORMULA 1 AWS GRAN PREMIO DEL",
-      "subtitle": "MADE IN ITALY E DELL&apos;EMILIA-ROMAGNA 2025",
-      "circuitImage": "../img/Australia carbon.png",
-      "record_vuelta": {
-        "tiempo": "1:30.983",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 1
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ]
+      "id": "fb5d",
+      "round": "Ultima pista",
+      "type": "Seleccione...",
+      "date": "",
+      "month": "",
+      "country": "",
+      "flag": "",
+      "title": "",
+      "subtitle": "",
+      "circuitImg": "",
+      "longitud": "",
+      "vueltas": "",
+      "descripcion": ""
     }
   ],
   "vehiculos": [
