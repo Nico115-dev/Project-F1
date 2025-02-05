@@ -295,72 +295,34 @@
   ],
   "circuitos": [
     {
-      "id": "36bf",
       "round": "TESTING",
-      "type": "testing",
-      "dates": "26-28",
+      "type": "Seleccione...",
+      "date": "26-28",
       "month": "FEB",
       "country": "Sakhir",
       "flag": "🇧🇭",
       "title": "FORMULA 1 ARAMCO PRE-SEASON",
       "subtitle": "TESTING 2025",
-      "circuitImage": "../img/Qatar carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:10.166",
-        "piloto": "Lewis Hamilton",
-        "año": 2019
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 1
-        },
-        {
-          "temporada": 2022,
-          "piloto": 2
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
+      "circuitImage": "../img/Japan carbon.avif",
       "longitud": "5.412 km",
-      "numero_vueltas": 57,
-      "description": "Circuito de pruebas en Sakhir antes del inicio de la temporada."
+      "vueltas": "",
+      "descripcion": "",
+      "id": "36bf"
     },
     {
-      "id": "9e17",
       "round": "ROUND 1",
-      "type": "race",
-      "dates": "14-16",
+      "type": "",
+      "date": "14-16",
       "month": "MAR",
       "country": "Australia",
       "flag": "🇦🇺",
       "title": "FORMULA 1 LOUIS VUITTON AUSTRALIAN",
       "subtitle": "GRAND PRIX 2025",
       "circuitImage": "../img/Australia carbon.avif",
-      "record_vuelta": {
-        "tiempo": "1:27.097",
-        "piloto": "Max Verstappen",
-        "año": 2020
-      },
-      "ganadores": [
-        {
-          "temporada": 2021,
-          "piloto": 3
-        },
-        {
-          "temporada": 2022,
-          "piloto": 5
-        },
-        {
-          "temporada": 2023,
-          "piloto": 1
-        }
-      ],
       "longitud": "5.303 km",
-      "numero_vueltas": 58,
-      "description": "Uno de los circuitos más icónicos de la temporada, ubicado en Melbourne."
+      "vueltas": "58",
+      "descripcion": "Uno de los circuitos más icónicos de la temporada, ubicado en Melbourne.",
+      "id": "9e17"
     },
     {
       "id": "c5a2",
@@ -431,34 +393,19 @@
       "description": "Circuito técnico y desafiante con curvas icónicas como la 130R."
     },
     {
-      "id": "72f8",
-      "round": "",
+      "round": "pRUEBA DE EDIT",
       "type": "Seleccione...",
-      "date": "",
-      "month": "",
-      "country": "",
-      "flag": "",
-      "title": "",
-      "subtitle": "",
-      "circuitImg": "",
-      "longitud": "",
-      "vueltas": "",
-      "descripcion": ""
-    },
-    {
-      "id": "fb5d",
-      "round": "Ultima pista",
-      "type": "Seleccione...",
-      "date": "",
-      "month": "",
-      "country": "",
-      "flag": "",
-      "title": "",
-      "subtitle": "",
-      "circuitImg": "",
-      "longitud": "",
-      "vueltas": "",
-      "descripcion": ""
+      "date": "26-28",
+      "month": "JUN",
+      "country": "SINALOA",
+      "flag": "🇲🇽",
+      "title": "SINALOACUP SIN PIERNA O SIN MANOS",
+      "subtitle": "HOLA",
+      "circuitImage": "../img/Qatar carbon.avif",
+      "longitud": "5.412 km",
+      "vueltas": "34",
+      "descripcion": "fdsfsdf",
+      "id": "72f8"
     }
   ],
   "vehiculos": [

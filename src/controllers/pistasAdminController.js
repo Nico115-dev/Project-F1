@@ -3,33 +3,33 @@ import { makeApiRequest } from "../../src/utils/iService.js";
 const ENDPOINT = "circuitos";
 
 function fetchAndRenderRaces() {
-    fetch("http://localhost:4000/circuitos")
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log("Datos obtenidos de la API:", data); 
-  
-       
-        const races = Array.isArray(data) ? data : [];
-  
-  
-        if (races.length === 0) {
-          throw new Error('No races found or invalid data structure');
-        }
-  
-        renderRaceGrid(races); 
-      })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-      });
-  }
-  
-  function createRaceCard(race) {
-    return `
+  fetch("http://localhost:4000/circuitos")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("Datos obtenidos de la API:", data);
+
+
+      const races = Array.isArray(data) ? data : [];
+
+
+      if (races.length === 0) {
+        throw new Error('No races found or invalid data structure');
+      }
+
+      renderRaceGrid(races);
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
+function createRaceCard(race) {
+  return `
       <div class="race-card">
         <div class="race-info">
           <div class="race-header">
@@ -53,43 +53,43 @@ function fetchAndRenderRaces() {
         </div>
       </div>
     `;
-  }
-  
-  
-  function renderRaceGrid(races) {
-    const raceGrid = document.getElementById("raceGrid");
-  
-  
-    if (!raceGrid) {
-      console.error('El contenedor raceGrid no fue encontrado.');
-      return;
-    }
-  
-  
-    if (races.length === 0) {
-      raceGrid.innerHTML = "<p>No races available</p>";
-      return;
-    }
-  
-    raceGrid.innerHTML = races.map(createRaceCard).join("");
+}
+
+
+function renderRaceGrid(races) {
+  const raceGrid = document.getElementById("raceGrid");
+
+
+  if (!raceGrid) {
+    console.error('El contenedor raceGrid no fue encontrado.');
+    return;
   }
 
 
-  
-  export async function crearPista(pistaData) {
-    try {
-      const response = await makeApiRequest({
-        endPoint: ENDPOINT,
-        method: "POST",
-        body: pistaData, // No usar JSON.stringify()
-      });
-      return response;
-    } catch (error) {
-      console.error("Error al crear la pista:", error);
-      throw error;
-    }
+  if (races.length === 0) {
+    raceGrid.innerHTML = "<p>No races available</p>";
+    return;
   }
-  
+
+  raceGrid.innerHTML = races.map(createRaceCard).join("");
+}
+
+
+
+export async function crearPista(pistaData) {
+  try {
+    const response = await makeApiRequest({
+      endPoint: ENDPOINT,
+      method: "POST",
+      body: pistaData, // No usar JSON.stringify()
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al crear la pista:", error);
+    throw error;
+  }
+}
+
 
 
 export async function obtenerPistas() {
@@ -107,7 +107,6 @@ export async function obtenerPistas() {
 
 export async function obtenerNombresPistas() {
   try {
-    alert("Entra aquí");
     const data = await obtenerPistas(); // Obtener datos
     const pistas = data.map(pista => ({
       id: pista.id,
@@ -139,6 +138,7 @@ export async function obtenerPistaPorId(id) {
 export async function actualizarPista(id, pistaData) {
   try {
     const response = await makeApiRequest({
+
       endPoint: `${ENDPOINT}/${id}`,
       method: "PUT",
       body: pistaData,
@@ -164,6 +164,5 @@ export async function eliminarPista(id) {
   }
 }
 
-  
 
-  
+
