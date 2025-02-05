@@ -285,3 +285,8 @@ h2 {
 h2:first-of-type {
   margin-top: 50px;
 }
+
+.container-display{
+  margin-top: 20vh;
+}
+
