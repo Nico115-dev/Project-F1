@@ -1,20 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  .sidebar h2{
+    color: red;
+    justify-content: center;
+    display: flex;
+  }
+  .sidebar h4{
+    font-size: 14px !important
+  }
   body {
     font-family: "Audiowide", serif;
     background: linear-gradient(135deg, #000033 0%, #003366 100%);
     color: white;
     min-height: 100vh;
   }
-  
-  /* Barra de navegación */
+  .news-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.main-section h3{
+  color: red;
+}
+
+.news-article {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  flex: 1;
+  max-width: 100%;
+}
+
+.news-article h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.news-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.news-article p {
+  color: #c5c5c5;
+  font-size: 14px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+
   .nav-bar {
     position: fixed;
     top: 0;
@@ -42,7 +90,7 @@
     width: auto;
   }
   
-  /* Navegación */
+
   nav ul {
     display: flex;
     gap: 2rem;
@@ -61,10 +109,9 @@
   }
   
   nav a:hover {
-    color: #e10600; /* Color rojo F1 */
+    color: #e10600; 
   }
-  
-  /* Contenido principal */
+
   .content {
     margin-top: 80px;
     padding: 2rem;
@@ -76,25 +123,21 @@
     margin-right: auto;
   }
   
-  /* Sidebar */
   .sidebar {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
     padding: 1.5rem;
     border-radius: 8px;
-  }
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
   
   .sidebar h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
   
-  .stats-line {
-    height: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 1rem;
-    border-radius: 4px;
-  }
   
   /* Sección principal */
   .main-section {
@@ -103,7 +146,6 @@
     gap: 2rem;
   }
   
-  /* Filtros */
   .filters {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
@@ -112,9 +154,12 @@
   }
   
   .filters h3 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-  }
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
   
   .filter-line {
     height: 1rem;
@@ -142,7 +187,9 @@
     font-weight: bold;
     transition: transform 0.3s ease;
     cursor: pointer;
-  }
+    text-decoration: none; 
+    color: white;
+}
   
   .card:hover {
     transform: scale(1.05);
