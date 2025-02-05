@@ -45,7 +45,7 @@ class PodioF1 extends HTMLElement {
         <ul>
           <li><a href="../../src/views/menu.html">Home</a></li>
           <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
-          <li><a href="../../src/views/pilotos.html">Equipos</a></li>
+          <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
           <li><a href="../../src/views/pistas.html">Circuitos</a></li>
           <li><a href="../../src/views/tabla.html">Resultados</a></li>
         </ul>

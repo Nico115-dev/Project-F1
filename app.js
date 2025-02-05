@@ -7,6 +7,7 @@ import "./src/components/menucomponent.js";
 import "./src/components/admPilotosComponent.js";
 import "./src/components/adminIndexComponent.js";
 import "./src/components/circuitoadminComponents.js";
+import "./src/components/simulacionComponent.js"
 
 import "./src/components/adminIndexComponent.js"
 import "./src/components/tablaComponent.js"
