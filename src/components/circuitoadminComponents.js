@@ -1,4 +1,5 @@
 import { fetchAndRenderRaces } from "../../src/controllers/pistasController.js";
+import {crearPista} from "../../src/controllers/pistasAdminController.js";
 
 class Circuitos extends HTMLElement {
   constructor() {
@@ -116,7 +117,7 @@ class Circuitos extends HTMLElement {
               <textarea id="descripcionPista" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Guardar Configuración</button>
+            <button type="submit" class="submit-btn" id = "btnGuardar">Guardar</button>
           </form>
         </div>
       </div>
@@ -201,7 +202,7 @@ class Circuitos extends HTMLElement {
               <textarea id="descripcionPista" rows="3" disabled></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Editar</button>
+            <button type="submit" class="editar-btn">Editar</button>
           </form>
         </div>
       </div>
@@ -216,12 +217,21 @@ class Circuitos extends HTMLElement {
               <select type="text" id="roundPista"></select>
             </div>
           </div>
-          <button type="submit" class="submit-btn">Eliminar</button>
+          <button type="submit" class="elimnar-btn">Eliminar</button>
         </div>
       </div>
     `;
 
     fetchAndRenderRaces();
+    const saveBtn = document.getElementById("btnGuardar");
+    saveBtn.addEventListener("click", (event)=>{
+        event.preventDefault(); 
+        const data = handleSaveClick();
+        console.log(data);
+        crearPista(data)
+        .then(response => console.log("Pista creada:", response))
+         .catch(error => console.error("Error en la creación:", error));
+    });
   }
 }
 
@@ -230,56 +240,86 @@ customElements.define('circuitos-d', Circuitos);
 document.addEventListener("DOMContentLoaded", fetchAndRenderRaces);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modalAdd = document.getElementById("modalAdd");
-  const modalEdit = document.getElementById("modalEdit");
-  const modalDelete = document.getElementById("modalDelete");
-  const addRaceBtn = document.getElementById("addRaceBtn");
-  const editRaceBtn = document.getElementById("editRaceBtn");
-  const deleteRaceBtn = document.getElementById("deleteRaceBtn");
+    const modalAdd = document.getElementById("modalAdd");
+    const modalEdit = document.getElementById("modalEdit");
+    const modalDelete = document.getElementById("modalDelete");
+    const addRaceBtn = document.getElementById("addRaceBtn");
+    const editRaceBtn = document.getElementById("editRaceBtn");
+    const deleteRaceBtn = document.getElementById("deleteRaceBtn");
+  
+    const closeAddModal = document.getElementById("closeModal");
+    const closeEditModal = document.getElementById("closeEditModal");
+    const closeDeleteModal = document.getElementById("closeDeleteModal");
+  
+    const overlay = document.getElementById("modalOverlay");
+  
+    // Función para abrir el modal de agregar
+    function openAddModal() {
+      modalAdd.style.display = "block";
+      overlay.style.display = "block";
+    }
+  
+    // Función para abrir el modal de editar
+    function openEditModal() {
+      modalEdit.style.display = "block";
+      overlay.style.display = "block";
+    }
+  
+    // Función para abrir el modal de eliminar
+    function openDeleteModal() {
+      modalDelete.style.display = "block";
+      overlay.style.display = "block";
+    }
+  
+    // Función para cerrar el modal
+    function closeModalFunc(modal) {
+      modal.style.display = "none";
+      overlay.style.display = "none";
+    }
+  
+    // Obtener el formulario de agregar y el botón de guardar
+    const formAdd = document.querySelector("#modalAdd form");
 
-  const closeAddModal = document.getElementById("closeModal");
-  const closeEditModal = document.getElementById("closeEditModal");
-  const closeDeleteModal = document.getElementById("closeDeleteModal");
+  
+    // Función para manejar el envío del formulario
+   
+  
+    // Event listeners
+    addRaceBtn.addEventListener("click", openAddModal);
+    editRaceBtn.addEventListener("click", openEditModal);
+    deleteRaceBtn.addEventListener("click", openDeleteModal);
+  
+    closeAddModal.addEventListener("click", () => closeModalFunc(modalAdd));
+    closeEditModal.addEventListener("click", () => closeModalFunc(modalEdit));
+    closeDeleteModal.addEventListener("click", () => closeModalFunc(modalDelete));
+  
+    // Close the modals when clicking outside of them (on overlay)
+    overlay.addEventListener("click", () => {
+      closeModalFunc(modalAdd);
+      closeModalFunc(modalEdit);
+      closeModalFunc(modalDelete);
+    });
+  
+    // Agregar el event listener al botón de guardar en el modal de agregar
 
-  const overlay = document.getElementById("modalOverlay");
-
-  // Función para abrir el modal de agregar
-  function openAddModal() {
-    modalAdd.style.display = "block";
-    overlay.style.display = "block";
-  }
-
-  // Función para abrir el modal de editar
-  function openEditModal() {
-    modalEdit.style.display = "block";
-    overlay.style.display = "block";
-  }
-
-  // Función para abrir el modal de eliminar
-  function openDeleteModal() {
-    modalDelete.style.display = "block";
-    overlay.style.display = "block";
-  }
-
-  // Función para cerrar el modal
-  function closeModalFunc(modal) {
-    modal.style.display = "none";
-    overlay.style.display = "none";
-  }
-
-  // Event listeners
-  addRaceBtn.addEventListener("click", openAddModal);
-  editRaceBtn.addEventListener("click", openEditModal);
-  deleteRaceBtn.addEventListener("click", openDeleteModal);
-
-  closeAddModal.addEventListener("click", () => closeModalFunc(modalAdd));
-  closeEditModal.addEventListener("click", () => closeModalFunc(modalEdit));
-  closeDeleteModal.addEventListener("click", () => closeModalFunc(modalDelete));
-
-  // Close the modals when clicking outside of them (on overlay)
-  overlay.addEventListener("click", () => {
-    closeModalFunc(modalAdd);
-    closeModalFunc(modalEdit);
-    closeModalFunc(modalDelete);
   });
-});
+
+  function handleSaveClick() {
+    return {
+      round: document.getElementById("roundPista").value,
+      type: document.getElementById("typePista").value,
+      date: document.getElementById("datesPista").value,
+      month: document.getElementById("monthPista").value,
+      country: document.getElementById("countryPista").value,
+      flag: document.getElementById("flagPista").value,
+      title: document.getElementById("titlePista").value,
+      subtitle: document.getElementById("subtitlePista").value,
+      circuitImg: document.getElementById("circuitImgPista").value,
+      longitud: document.getElementById("longitudPista").value,
+      vueltas: document.getElementById("vueltasPista").value,
+      descripcion: document.getElementById("descripcionPista").value,
+    };
+  }
+  
+
+  

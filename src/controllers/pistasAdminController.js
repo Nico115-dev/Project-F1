@@ -1,5 +1,9 @@
+import { makeApiRequest } from "../../src/utils/iService.js";
+
+const ENDPOINT = "circuitos";
+
 function fetchAndRenderRaces() {
-    fetch('http://localhost:4000/circuitos')
+    fetch("http://localhost:4000/circuitos")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -69,8 +73,80 @@ function fetchAndRenderRaces() {
   
     raceGrid.innerHTML = races.map(createRaceCard).join("");
   }
+
+
   
+  export async function crearPista(pistaData) {
+    try {
+      const response = await makeApiRequest({
+        endPoint: ENDPOINT,
+        method: "POST",
+        body: pistaData, // No usar JSON.stringify()
+      });
+      return response;
+    } catch (error) {
+      console.error("Error al crear la pista:", error);
+      throw error;
+    }
+  }
   
+
+
+export async function obtenerPistas() {
+  try {
+    const response = await makeApiRequest({
+      endPoint: ENDPOINT,
+      method: "GET",
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al obtener las pistas:", error);
+    throw error;
+  }
+}
+
+// Obtener una pista por su ID
+export async function obtenerPistaPorId(id) {
+  try {
+    const response = await makeApiRequest({
+      endPoint: `${ENDPOINT}/${id}`,
+      method: "GET",
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al obtener la pista por ID:", error);
+    throw error;
+  }
+}
+
+// Actualizar una pista
+export async function actualizarPista(id, pistaData) {
+  try {
+    const response = await makeApiRequest({
+      endPoint: `${ENDPOINT}/${id}`,
+      method: "PUT",
+      body: pistaData,
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al actualizar la pista:", error);
+    throw error;
+  }
+}
+
+// Eliminar una pista
+export async function eliminarPista(id) {
+  try {
+    const response = await makeApiRequest({
+      endPoint: `${ENDPOINT}/${id}`,
+      method: "DELETE",
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al eliminar la pista:", error);
+    throw error;
+  }
+}
 
   
 

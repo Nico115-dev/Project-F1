@@ -181,12 +181,15 @@
       "Nacionalidad": "Estadounidense"
     }
   ],
-"equipos": [
+  "equipos": [
     {
       "nombre": "Red Bull Racing",
       "pais": "Austria",
       "motor": "Honda",
-      "pilotos": [1, 2],
+      "pilotos": [
+        1,
+        2
+      ],
       "logo": "https://cdn-3.motorsport.com/images/mgl/Y99JQRbY/s8/red-bull-racing-logo-1.jpg",
       "id": "9a8a"
     },
@@ -194,7 +197,10 @@
       "nombre": "Mercedes-AMG Petronas",
       "pais": "Alemania",
       "motor": "Mercedes",
-      "pilotos": [3, 4],
+      "pilotos": [
+        3,
+        4
+      ],
       "logo": "https://seeklogo.com/images/M/mercedes-amg-f1-logo-1ED622D95E-seeklogo.com.png",
       "id": "3e3a"
     },
@@ -202,7 +208,10 @@
       "nombre": "Ferrari",
       "pais": "Italia",
       "motor": "Ferrari",
-      "pilotos": [5, 6],
+      "pilotos": [
+        5,
+        6
+      ],
       "logo": "https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515318_10187.png",
       "id": "15d3"
     },
@@ -210,7 +219,10 @@
       "nombre": "McLaren",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [7, 8],
+      "pilotos": [
+        7,
+        8
+      ],
       "logo": "https://cdn-1.motorsport.com/images/mgl/YEQJgyLY/s800/mclaren-f1-team-logo-1.jpg",
       "id": "3e3a"
     },
@@ -218,7 +230,10 @@
       "nombre": "Aston Martin",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [9, 10],
+      "pilotos": [
+        9,
+        10
+      ],
       "logo": "https://cdn-5.motorsport.com/images/mgl/0rGRlkm2/s8/aston-martin-logo-2022-1.jpg",
       "id": "3e3a"
     },
@@ -226,7 +241,10 @@
       "nombre": "Alpine",
       "pais": "Francia",
       "motor": "Renault",
-      "pilotos": [11, 12],
+      "pilotos": [
+        11,
+        12
+      ],
       "logo": "https://fbi.cults3d.com/uploaders/15119367/illustration-file/66644f56-347e-4b28-8fbd-b95ebe714814/img-95086.jpg",
       "id": "3e3a"
     },
@@ -234,7 +252,10 @@
       "nombre": "Kick Sauber",
       "pais": "Suiza",
       "motor": "Ferrari",
-      "pilotos": [13, 14],
+      "pilotos": [
+        13,
+        14
+      ],
       "logo": "https://www.sopitas.com/wp-content/uploads/2024/01/stake-f1-team-sauber.jpg",
       "id": "3e3a"
     },
@@ -242,7 +263,10 @@
       "nombre": "Haas",
       "pais": "Estados Unidos",
       "motor": "Ferrari",
-      "pilotos": [15, 16],
+      "pilotos": [
+        15,
+        16
+      ],
       "logo": "https://cdn.mos.cms.futurecdn.net/uuQxV8xeSFh3PpnuzAyKKV.png",
       "id": "3e3a"
     },
@@ -250,7 +274,10 @@
       "nombre": "AlphaTauri",
       "pais": "Italia",
       "motor": "Honda",
-      "pilotos": [17, 18],
+      "pilotos": [
+        17,
+        18
+      ],
       "logo": "https://external-preview.redd.it/7fW_kMYXlBMW2hCp-0SOK5vdlSpc57U50tK6ZyOzGPo.jpg?auto=webp&s=faa99261816d162c70214a897c89f41c606dad3c",
       "id": "3e3a"
     },
@@ -258,7 +285,10 @@
       "nombre": "Williams",
       "pais": "Reino Unido",
       "motor": "Mercedes",
-      "pilotos": [19, 20],
+      "pilotos": [
+        19,
+        20
+      ],
       "logo": "https://cdn-1.motorsport.com/images/mgl/2y39NBy6/s8/williams-racing-logo-1.jpg",
       "id": "3e3a"
     }
@@ -281,9 +311,18 @@
         "año": 2019
       },
       "ganadores": [
-        {"temporada": 2021, "piloto": 1},
-        {"temporada": 2022, "piloto": 2},
-        {"temporada": 2023, "piloto": 1}
+        {
+          "temporada": 2021,
+          "piloto": 1
+        },
+        {
+          "temporada": 2022,
+          "piloto": 2
+        },
+        {
+          "temporada": 2023,
+          "piloto": 1
+        }
       ],
       "longitud": "5.412 km",
       "numero_vueltas": 57,
@@ -306,9 +345,18 @@
         "año": 2020
       },
       "ganadores": [
-        {"temporada": 2021, "piloto": 3},
-        {"temporada": 2022, "piloto": 5},
-        {"temporada": 2023, "piloto": 1}
+        {
+          "temporada": 2021,
+          "piloto": 3
+        },
+        {
+          "temporada": 2022,
+          "piloto": 5
+        },
+        {
+          "temporada": 2023,
+          "piloto": 1
+        }
       ],
       "longitud": "5.303 km",
       "numero_vueltas": 58,
@@ -331,9 +379,18 @@
         "año": 2018
       },
       "ganadores": [
-        {"temporada": 2021, "piloto": 1},
-        {"temporada": 2022, "piloto": 1},
-        {"temporada": 2023, "piloto": 1}
+        {
+          "temporada": 2021,
+          "piloto": 1
+        },
+        {
+          "temporada": 2022,
+          "piloto": 1
+        },
+        {
+          "temporada": 2023,
+          "piloto": 1
+        }
       ],
       "longitud": "5.451 km",
       "numero_vueltas": 56,
@@ -356,13 +413,52 @@
         "año": 2004
       },
       "ganadores": [
-        {"temporada": 2021, "piloto": 2},
-        {"temporada": 2022, "piloto": 1},
-        {"temporada": 2023, "piloto": 1}
+        {
+          "temporada": 2021,
+          "piloto": 2
+        },
+        {
+          "temporada": 2022,
+          "piloto": 1
+        },
+        {
+          "temporada": 2023,
+          "piloto": 1
+        }
       ],
       "longitud": "5.807 km",
       "numero_vueltas": 53,
       "description": "Circuito técnico y desafiante con curvas icónicas como la 130R."
+    },
+    {
+      "id": "72f8",
+      "round": "",
+      "type": "Seleccione...",
+      "date": "",
+      "month": "",
+      "country": "",
+      "flag": "",
+      "title": "",
+      "subtitle": "",
+      "circuitImg": "",
+      "longitud": "",
+      "vueltas": "",
+      "descripcion": ""
+    },
+    {
+      "id": "fb5d",
+      "round": "Ultima pista",
+      "type": "Seleccione...",
+      "date": "",
+      "month": "",
+      "country": "",
+      "flag": "",
+      "title": "",
+      "subtitle": "",
+      "circuitImg": "",
+      "longitud": "",
+      "vueltas": "",
+      "descripcion": ""
     }
   ],
   "vehiculos": [
