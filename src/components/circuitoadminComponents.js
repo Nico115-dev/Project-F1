@@ -9,20 +9,23 @@ class Circuitos extends HTMLElement {
   async connectedCallback() {
 
     this.innerHTML = /*html*/ `
-      <header class="nav-bar">
-        <div class="logo">
-          <img src="../img/image.png" alt="F1 Logo">
+          <style>
+             @import url("http://localhost:5502/src/styles/menu.css");
+          </style>
+      <<header class="nav-bar">
+          <div class="logo">
+            <img src="../../src/img/image.png" alt="F1 Logo"> Administrador
         </div>
         <nav>
-          <ul>
-            <li><a href="../../src/views/menu.html">Home</a></li>
-            <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
-            <li><a href="../../src/views/pilotos.html">Teams</a></li>
-            <li><a href="../../src/views/pistas.html">Circuitss</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
+                <li><a href="../../src/views/Pilotos.html">Equipos</a></li>
+                <li><a href="../../src/views/PistasAdmin.html">Circuitos</a></li>
+                <li><a href="../../src/views/tabla.html">Resultados</a></li>
+            </ul>
         </nav>
-      </header>
-
+    </header>
       <div class="container">
         <header>
           <div class="title">
