@@ -965,6 +965,11 @@
       "equipo": "Ferrari",
       "puntos": 50,
       "id": "8e15"
+    },
+    {
+      "id": "492a",
+      "equipo": "Aston Martin",
+      "puntos": 25
     }
   ]
 }
