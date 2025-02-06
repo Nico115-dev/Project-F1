@@ -423,3 +423,7 @@ header {
   outline: none;
   transform: scale(1.02);
 }
+
+.selectContainer{
+  background-color: #4d4d4d;
+}
