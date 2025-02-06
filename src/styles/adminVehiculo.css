@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+#equipoPiloto{
+  background-color: #4a4a4a;
+
+}
+
 .gallery-container {
   margin-top: 10vh;
   padding: 20px;
@@ -30,6 +35,10 @@ body {
   overflow-x: auto;
   max-width: 100%;
   padding: 20px;
+}
+
+.selectContainer{
+  background-color: #333;
 }
 
 .gallery-item {
@@ -304,3 +313,4 @@ body {
   width: 10%;
 
 }
+
