@@ -1000,5 +1000,17 @@
       "imagen2": "../src/img/HaasLD.png",
       "id": "88b4"
     }
+  ],
+  "podio": [
+    {
+      "equipo": "Red Bull Racing",
+      "puntos": 250,
+      "id": "934c"
+    },
+    {
+      "equipo": "Ferrari",
+      "puntos": 50,
+      "id": "8e15"
+    }
   ]
 }
