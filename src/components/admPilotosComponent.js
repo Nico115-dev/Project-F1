@@ -39,7 +39,7 @@ class AdmPilotosComponent extends HTMLElement {
         </div>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="../../src/views/admMenu.html">Home</a></li>
             <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
             <li><a href="../../src/views/admPilotos.html">Equipos</a></li>
             <li><a href="../../src/views/PistasAdmin.html">Circuitos</a></li>
