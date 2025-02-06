@@ -68,12 +68,20 @@ export const obtenerVehiculos = async function () {
           modal.style.display = "flex";
           modalTitle.textContent = `${vehiculo.equipo} ${vehiculo.modelo}`;
           modalImage.src = img.src; // Usar la imagen corregida
+          const consumoCombustibles = vehiculo.rendimiento.conduccion_normal.consumo_combustible.seco;
+          const consumoCombustiblell = vehiculo.rendimiento.conduccion_normal.consumo_combustible.lluvioso;
+          const consumoCombustibleEx = vehiculo.rendimiento.conduccion_normal.consumo_combustible.extremo;
 
           modalDescription.innerHTML = `
-            <p><strong>Equipo:</strong> ${vehiculo.equipo}</p>
-            <p><strong>Motor:</strong> ${vehiculo.motor} </p>
-            <p><strong>Modelo:</strong> ${vehiculo.modelo} </p>
-          `;
+          
+    <p><strong>Equipo:</strong> ${vehiculo.equipo}</p>
+    <p><strong>Motor:</strong> ${vehiculo.motor}</p>
+    <p><strong>Modelo:</strong> ${vehiculo.modelo}</p>
+      <p><strong>Consumo (seco):</strong> ${consumoCombustibles} L/100 km</p>
+             <p><strong>Consumo (Lluvioso):</strong> ${consumoCombustiblell} L/100 km</p>
+              <p><strong>Consumo (Extremo):</strong> ${consumoCombustibleEx} L/100 km</p>
+  
+  `;
 
           // Incluir las estadísticas en el modal
           modalDescription.appendChild(statsSection);
@@ -161,7 +169,7 @@ function createProgressCircle(value, maxValue, label) {
   // Calcular porcentaje
   const pct = (value / maxValue) * 100;
   const offset = 251.2 - (pct / 100) * 251.2;
-  
+
   setTimeout(() => {
     circleProgress.style.transition = "stroke-dashoffset 1.2s ease-in-out, transform 0.5s ease-in-out";
     circleProgress.setAttribute("stroke-dashoffset", offset);
