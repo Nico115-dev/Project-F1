@@ -1,4 +1,4 @@
-import { getVehicles, getPilots, getTracks, getTeams } from "../controllers/simulacionController.js";
+import { getVehicles, getPilots, getTracks, getTeams, getPodio, updatePodio } from "../controllers/simulacionController.js";
 
 export class SimulacionCarrera extends HTMLElement {
   constructor() {
@@ -22,6 +22,12 @@ export class SimulacionCarrera extends HTMLElement {
     this.loadVehicleConfig(); // carga la configuración guardada (si existe)
     this.loadData();
     this.setupEventListeners();
+    const formElement = this.querySelector("form");
+    if (formElement) {
+      formElement.addEventListener("submit", (event) => {
+        event.preventDefault();
+      });
+    }
   }
 
   render() {
@@ -227,7 +233,7 @@ export class SimulacionCarrera extends HTMLElement {
           </div>
         </div>
         
-        <button id="startRaceBtn">Iniciar Carrera</button>
+        <button type="button" id="startRaceBtn">Iniciar Carrera</button>
         <div id="raceResults"></div>
       </div>
     `;
@@ -367,7 +373,8 @@ export class SimulacionCarrera extends HTMLElement {
       this.updatePilotOptions(teamId);
       this.updateVehicleOptions(teamId);
     });
-    this.querySelector("#startRaceBtn").addEventListener("click", () => {
+    this.querySelector("#startRaceBtn").addEventListener("click", (event) => {
+      event.preventDefault();
       this.handleRace();
     });
     this.querySelector("#drivingModeSelect").addEventListener("change", (e) => {
@@ -430,51 +437,51 @@ export class SimulacionCarrera extends HTMLElement {
     this.populateCards("vehicleCards", filteredVehicles, "vehicle");
   }
 
-  handleRace() {
+  async handleRace() {
+    // Validación de selección (asegúrate de que se hayan seleccionado equipo, piloto, vehículo y pista)
     const teamId = this.querySelector("#selectTeam").value;
     const pilotId = this.selectedPilotId;
     const vehicleId = this.selectedVehicleId;
     const trackId = this.selectedTrackId;
-
+    
     if (!teamId || !pilotId || !vehicleId || !trackId) {
       alert("Por favor, selecciona un equipo, piloto, vehículo y pista.");
       return;
     }
-
-    // Leer configuración seleccionada desde la interfaz (si no se ha actualizado mediante eventos)
+    
+    // Leer y guardar la configuración del vehículo
     const drivingMode = this.querySelector("#drivingModeSelect").value || "normal";
     const aerodynamic = this.querySelector("#aerodynamicSelect").value || "media";
     const tirePressure = this.querySelector("#tirePressureSelect").value || "estandar";
     const fuelStrategy = this.querySelector("#fuelStrategySelect").value || "balanceada";
     
-    // Guardar la configuración automáticamente en el localStorage
-    const vehicleConfig = {
-      drivingMode,
-      aerodynamic,
-      tirePressure,
-      fuelStrategy
-    };
+    const vehicleConfig = { drivingMode, aerodynamic, tirePressure, fuelStrategy };
     localStorage.setItem("vehicleConfig", JSON.stringify(vehicleConfig));
     
     const selectedPilot = this.pilots.find(p => p.id === pilotId);
     const selectedVehicle = this.vehicles.find(v => v.id === vehicleId);
     const selectedTrack = this.tracks.find(t => String(t.id) === trackId);
-
+    
+    // Cálculos, efectos de pista, etc.
     const circuitEffects = this.calculateCircuitEffects(selectedTrack);
-    console.log("Efectos del circuito:", circuitEffects);
-
-    // Ejemplo de uso: ajustar el consumo y desgaste base del vehículo según la condición del circuito
     const performance = selectedVehicle.rendimiento.conduccion_normal;
     const baseConsumo = performance.consumo_combustible[circuitEffects.condicion] || 1;
     const baseDesgaste = performance.desgaste_neumaticos[circuitEffects.condicion] || 1;
-
     const finalConsumo = baseConsumo * circuitEffects.consumptionModifier;
     const finalDesgaste = baseDesgaste * circuitEffects.tireWearModifier;
-
+    
     console.log("Consumo ajustado:", finalConsumo);
     console.log("Desgaste ajustado:", finalDesgaste);
-
+    
+    // Simular la carrera y ordenar los resultados por tiempo
     const results = this.simulateRace(selectedPilot, selectedVehicle, selectedTrack, vehicleConfig);
+    results.sort((a, b) => a.time - b.time);
+    
+    // Deshabilitar el botón para evitar reinicios
+    const startRaceBtn = this.querySelector("#startRaceBtn");
+    startRaceBtn.disabled = true;
+    
+    // Mostrar el podio en un modal (sin subir datos aún)
     this.displayResults(results);
   }
 
@@ -556,16 +563,71 @@ export class SimulacionCarrera extends HTMLElement {
 
   displayResults(results) {
     const weather = this.getRandomWeather();
-    const resultsContainer = this.querySelector("#raceResults");
-    resultsContainer.innerHTML = `
+    
+    // Crear el overlay del modal
+    const modalOverlay = document.createElement("div");
+    modalOverlay.classList.add("modal-overlay");
+    modalOverlay.innerHTML = `
       <style>
-        .podium {
+        .modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+        .modal-content {
+          background: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          max-width: 600px;
+          width: 90%;
+          position: relative;
+          text-align: center;
+        }
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: #f44336;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+        .upload-btn {
+          background: #4CAF50;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 15px;
+          cursor: pointer;
+          margin-top: 15px;
+        }
+        .upload-btn:hover {
+          background: #45a049;
+        }
+        .modal-header {
+          margin-bottom: 20px;
+        }
+        .modal-header .weather-info {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+          color: #ff2020;
+        }
+        .modal-body .podium {
           display: flex;
           justify-content: center;
           align-items: flex-end;
           margin: 20px auto;
         }
-        .podium-spot {
+        .modal-body .podium-spot {
           width: 120px;
           margin: 0 10px;
           padding: 10px;
@@ -574,66 +636,108 @@ export class SimulacionCarrera extends HTMLElement {
           background: #eaeaea;
           transition: transform 0.3s ease;
         }
-        .podium-spot:hover {
+        .modal-body .podium-spot:hover {
           transform: scale(1.05);
         }
-        .podium-spot.first {
+        .modal-body .podium-spot.first {
           height: 180px;
-          background: #ffd700; /* Oro */
+          background: #ffd700;
         }
-        .podium-spot.second {
+        .modal-body .podium-spot.second {
           height: 150px;
-          background: #c0c0c0; /* Plata */
+          background: #c0c0c0;
         }
-        .podium-spot.third {
+        .modal-body .podium-spot.third {
           height: 140px;
-          background: #cd7f32; /* Bronce */
+          background: #cd7f32;
         }
-        .podium-rank {
+        .modal-body .podium-rank {
           font-size: 1.5rem;
           font-weight: bold;
           margin-bottom: 5px;
         }
-        .podium-name {
+        .modal-body .podium-name {
           font-size: 1.1rem;
           margin: 5px 0;
           font-weight: bold;
         }
-        .podium-vehicle,
-        .podium-time {
+        .modal-body .podium-vehicle,
+        .modal-body .podium-time {
           font-size: 0.9rem;
           margin: 2px 0;
         }
-        .weather-info {
-          text-align: center;
-          font-size: 1.2rem;
-          margin-bottom: 20px;
-          color: #ff2020;
-        }
       </style>
-      <div class="weather-info">Condición climática: ${weather}</div>
-      <h2 style="text-align: center; margin-bottom: 20px;">Podio de la Carrera</h2>
-      <div class="podium">
-        <div class="podium-spot second">
-          <div class="podium-rank">2º</div>
-          <div class="podium-name">${results[1].pilot}</div>
-          <div class="podium-vehicle">${results[1].vehicle}</div>
-          <div class="podium-time">${results[1].time.toFixed(2)} seg</div>
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">Cerrar</button>
+        <div class="modal-header">
+          <div class="weather-info">Condición climática: ${weather}</div>
+          <h2>Podio de la Carrera</h2>
         </div>
-        <div class="podium-spot first">
-          <div class="podium-rank">1º</div>
-          <div class="podium-name">${results[0].pilot}</div>
-          <div class="podium-vehicle">${results[0].vehicle}</div>
-          <div class="podium-time">${results[0].time.toFixed(2)} seg</div>
+        <div class="modal-body">
+          <div class="podium">
+            <div class="podium-spot second">
+              <div class="podium-rank">2º</div>
+              <div class="podium-name">${results[1].pilot}</div>
+              <div class="podium-vehicle">${results[1].vehicle}</div>
+              <div class="podium-time">${results[1].time.toFixed(2)} seg</div>
+            </div>
+            <div class="podium-spot first">
+              <div class="podium-rank">1º</div>
+              <div class="podium-name">${results[0].pilot}</div>
+              <div class="podium-vehicle">${results[0].vehicle}</div>
+              <div class="podium-time">${results[0].time.toFixed(2)} seg</div>
+            </div>
+            <div class="podium-spot third">
+              <div class="podium-rank">3º</div>
+              <div class="podium-name">${results[2].pilot}</div>
+              <div class="podium-vehicle">${results[2].vehicle}</div>
+              <div class="podium-time">${results[2].time.toFixed(2)} seg</div>
+            </div>
+          </div>
         </div>
-        <div class="podium-spot third">
-          <div class="podium-rank">3º</div>
-          <div class="podium-name">${results[2].pilot}</div>
-          <div class="podium-vehicle">${results[2].vehicle}</div>
-          <div class="podium-time">${results[2].time.toFixed(2)} seg</div>
+        <div class="modal-footer">
+          <button class="upload-btn" id="uploadResultsBtn">Subir Resultados</button>
         </div>
       </div>
     `;
+    
+    // Agregar el modal al documento
+    document.body.appendChild(modalOverlay);
+    
+    // Cerrar el modal manualmente
+    modalOverlay.querySelector("#closeModal").addEventListener("click", () => {
+      modalOverlay.remove();
+      this.querySelector("#startRaceBtn").disabled = false;
+    });
+    
+    // Subir resultados al presionar "Subir Resultados"
+    modalOverlay.querySelector("#uploadResultsBtn").addEventListener("click", () => {
+      const winningPilotName = results[0].pilot;
+      const winningPilot = this.pilots.find(p => p.nombre === winningPilotName);
+      if (winningPilot) {
+        const winningTeam = winningPilot.equipo;
+        const puntosObtenidos = 25; // Ajusta este valor según tu sistema de puntuación
+        updatePodio(winningTeam, puntosObtenidos)
+          .then(data => {
+            console.log("Podio actualizado:", data);
+            alert("Resultados subidos exitosamente");
+            modalOverlay.remove();
+            this.querySelector("#startRaceBtn").disabled = false;
+          })
+          .catch(error => {
+            console.error("Error al actualizar el podio:", error);
+            alert("Error al subir los resultados");
+          });
+      }
+    });
+    
+    // Auto-cerrar el modal después de 20 segundos si no se interactúa
+    setTimeout(() => {
+      if (document.body.contains(modalOverlay)) {
+        modalOverlay.remove();
+        this.querySelector("#startRaceBtn").disabled = false;
+      }
+    }, 20000);
   }
 
   // Carga la configuración guardada (si existe) y actualiza los selects
