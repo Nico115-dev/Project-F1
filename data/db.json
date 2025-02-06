@@ -309,16 +309,6 @@
       ],
       "logo": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/williams",
       "id": "3e3a"
-    },
-    {
-      "id": "aeed",
-      "nombre": "hola prueba",
-      "pais": "dinamarca",
-      "motor": "SUSUKI",
-      "pilotos": [
-        "21"
-      ],
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZk7uJvtcZA2qYFTEJJbBu9NxNPw8nNTVZdQ&s"
     }
   ],
   "circuitos": [

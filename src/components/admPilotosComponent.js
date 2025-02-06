@@ -1,7 +1,7 @@
 
 import { PilotosController } from '../../src/controllers/pilotoController.js';
 import {obtenerPilotosSinEquipo} from "../../src/controllers/admPilotosController.js";
-import {saveTeam, obtenerNombresEscuderias} from "../../src/controllers/escuderiaController.js";
+import {saveTeam, obtenerNombresEscuderias, getTeamById, actualizarEscuderia, deleteTeam} from "../../src/controllers/escuderiaController.js";
 
 class AdmPilotosComponent extends HTMLElement {
   constructor() {
@@ -22,7 +22,7 @@ class AdmPilotosComponent extends HTMLElement {
     }
     
     this.setupModalEvents();
-    opc();
+    opcEsc();
   }
 
   render() {
@@ -78,7 +78,7 @@ class AdmPilotosComponent extends HTMLElement {
 
             <div class="form-group">
                 <label for="nomEsc">Nombre</label>
-                <input type="text" id="nomEsc">
+                <input type="text" id="NameEsc">
             </div>
 
             <div class="form-group">
@@ -99,7 +99,7 @@ class AdmPilotosComponent extends HTMLElement {
 
             <div class="form-group">
             <label for="pilotosEsc">Pilotos</label>
-            <select id="pilotosEsc" >
+            <select id="pilotosEsc" class = "selectContainer">
                 <option  readonly>Seleccione...</option>
             </select>
             </div>
@@ -124,10 +124,67 @@ class AdmPilotosComponent extends HTMLElement {
       <div class="modal-content">
       <span class="close" id="closeModalEditE">x</span>
       <h2>Editar Escudería</h2>
-      </div>
-      </div>
+      <form class="form-container">
+      <div class="busquedaEdit">
+        <div class="form-group">
+          <label for="selectNameEdit">Nombre</label>
+          <select id="selectNameEsc" class = "selectContainer" >
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="button" id="searchButtonEsc">Buscar</button>
+        </div>
       
-      <div id="modalDeleteE" class="modal"><div class="modal-content"><span class="close" id="closeModalDeleteE">x</span><h2>Eliminar Escudería</h2></div></div>
+
+      </div>
+
+      <div class="form-group">
+      <label for="NameEsc">Nombre</label>
+      <input id="NameEscE" disabled>
+
+    </div>
+      <div class="form-group">
+      <label for="paisEsc">País</label>
+      <input type="text" id="paisEscE" disabled>
+  </div>
+
+  <div class="form-group">
+      <label for="motorEsc">Motor</label>
+      <input type="text" id="motorEscE"disabled>
+  </div>
+
+  
+  <div class="form-group">
+      <label for="logoEsc">Logo</label>
+      <input type="text" id="logoEscE" disabled>
+  </div>
+
+
+
+  <div class="form-group">
+  <label for="pilotosSeleccionadosE">Seleccionados</label>
+  <input type="text"  id="pilotosSeleccionadosE" disabled>
+</div>
+<button type="submit" class="submit-btn" id="btnGuardarEscE">Guardar</button>
+      </div>
+      </div>
+
+      <div id="modalDeleteE" class="modal">
+      <div class="modal-content">
+      <span class="close" id="closeModalDeleteE">x</span>
+      <h2>Eliminar Escudería</h2>
+      <div class="busquedaEdit">
+      <div class="form-group">
+      <label for="selectDeleteEsc">Name</label>
+      <select class = "selectsModals" id="selectDeleteEsc">
+  </select>
+    </div>
+  </div>
+  <button type="submit" class="submit-btn" id ="eliminarBtnEsc">Eliminar</button>
+</div>
+      </div>
+      </div>
 
       <div id="modalAddP" class="modal">
         <div class="modal-content">
@@ -147,7 +204,7 @@ class AdmPilotosComponent extends HTMLElement {
 
           <div class="form-group">
           <label for="equipoPiloto">Equipo</label>
-          <select id="equipoPiloto">
+          <select id="equipoPiloto" class = "selectContainer">
             <option value =1>Seleccione...</option>
           </select>
         </div>
@@ -255,19 +312,46 @@ class AdmPilotosComponent extends HTMLElement {
       });
   });
   }
-
-
-
 }
 
-async function llenarSelectEditEsc() {
-  const data = await obtenerNombresEscuderias()
-  console.log("Nombres", data);
+//#region funciones Escuderia
+async function llenarEditEsc() {
+  const idEsc = document.getElementById("selectNameEsc").value;
+  if (!idEsc) {
+    alert("Por favor, selecciona una pista.");
+    return;
+  }
+    const dataGetEdit = await getTeamById(idEsc);
+    console.log(dataGetEdit);
+
+    if (!dataGetEdit) {
+      alert("No se encontraron datos para esta pista.");
+      return;
+    }
+
+    const nombre = document.getElementById("NameEscE");
+    const pais = document.getElementById("paisEscE");
+    const motor = document.getElementById("motorEscE");
+    const logo = document.getElementById("logoEscE");
+    const Seleccionados = document.getElementById("pilotosSeleccionadosE");
+
+    
+    nombre.value = dataGetEdit.nombre || "";
+    pais.value = dataGetEdit.pais || "";
+    motor.value = dataGetEdit.motor || "";
+    logo.value = dataGetEdit.logo || "";
+    Seleccionados.value = dataGetEdit.pilotos || "";
   
+    nombre.disabled = false;
+    pais.disabled = false;
+    motor.disabled = false;
+    logo.disabled = false;
+    Seleccionados.disabled = false;
 }
 
 async function llenarSelectEsc(id = '', fun) {
   const sinEquipo  = await fun();
+  console.log("obtener", sinEquipo);
   const selectEsc = document.getElementById(id);
   selectEsc.innerHTML = "<option value=''>Seleccione...</option>";
 
@@ -279,9 +363,34 @@ async function llenarSelectEsc(id = '', fun) {
   });
 }
 
-async function opc(){
-  llenarSelectEditEsc("");
-  llenarSelectEsc("pilotosEsc",obtenerPilotosSinEquipo )
+async function opcEsc(){
+
+  const btnEliminarEsc = document.getElementById("eliminarBtnEsc");
+  btnEliminarEsc.addEventListener("click", async(event) => {
+    event.preventDefault()
+    const idEli = document.getElementById("selectDeleteEsc").value;
+    deleteTeam(idEli);
+  })
+
+ 
+  const btnSaveEditEs = document.getElementById("btnGuardarEscE");
+  btnSaveEditEs.addEventListener("click", async(event) => {
+    const idEscEdit = document.getElementById("selectNameEsc").value;
+    console.log("ides", idEscEdit)
+    event.preventDefault();
+    const data = await obtenerInfoEscuderia("E");
+    console.log("", data);
+    actualizarEscuderia(idEscEdit, data)
+  })
+  const btnEditEsc = document.getElementById("searchButtonEsc");
+  btnEditEsc.addEventListener("click", async(event) => {
+    llenarEditEsc();
+  })
+
+
+  llenarSelectEsc("selectNameEsc", obtenerNombresEscuderias);
+  llenarSelectEsc("pilotosEsc",obtenerPilotosSinEquipo );
+  llenarSelectEsc("selectDeleteEsc",obtenerNombresEscuderias);
   const btnAggEsc = document.getElementById("btnGuardarEsc");
   btnAggEsc.addEventListener("click", async (event) =>{
     event.preventDefault();
@@ -291,19 +400,20 @@ async function opc(){
  
 }
 
-
-async function obtenerInfoEscuderia() {
-  const pilotosSeleccionados = document.getElementById("pilotosSeleccionados").value;
+async function obtenerInfoEscuderia(add = '') {
+  const pilotosSeleccionados = document.getElementById(`pilotosSeleccionados${add}`).value;
   const pilotos = pilotosSeleccionados.split(",").map(piloto => piloto.trim());
 
   return {
-    nombre: document.getElementById("nomEsc").value,
-    pais: document.getElementById("paisEsc").value,
-    motor: document.getElementById("motorEsc").value,
+    nombre: document.getElementById(`NameEsc${add}`).value, 
+    pais: document.getElementById(`paisEsc${add}`).value,  
+    motor: document.getElementById(`motorEsc${add}`).value,  
     pilotos: pilotos, 
-    logo: document.getElementById("logoEsc").value
+    logo: document.getElementById(`logoEsc${add}`).value  
   };
 }
+
+//#endregion
 
 
 customElements.define("adm-pilotos-form", AdmPilotosComponent);

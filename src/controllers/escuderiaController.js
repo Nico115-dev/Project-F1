@@ -18,7 +18,16 @@ export async function getTeams() {
 
 // Obtener una escudería por ID
 export async function getTeamById(id) {
-  return await makeApiRequest({ endPoint: `${ENDPOINT}/${id}` });
+    try {
+        const response = await makeApiRequest({
+          endPoint: `${ENDPOINT}/${id}`,
+          method: "GET",
+        });
+        return response;
+      } catch (error) {
+        console.error("Error al obtener la escuderia por ID:", error);
+        throw error;
+      }
 }
 
 // Guardar o actualizar una escudería
@@ -49,11 +58,35 @@ export async function obtenerNombresEscuderias() {
   }
 }
 
+export async function actualizarEscuderia(id, escData) {
+  try {
+    const response = await makeApiRequest({
+
+      endPoint: `${ENDPOINT}/${id}`,
+      method: "PUT",
+      body: escData,
+    });
+    return response;
+  } catch (error) {
+    console.error("Error al actualizar la pista:", error);
+    throw error;
+  }
+}
+
 
 
 // Eliminar una escudería
 export async function deleteTeam(id) {
-  return await makeApiRequest({ endPoint: `${ENDPOINT}/${id}`, method: "DELETE" });
+    try {
+      const response = await makeApiRequest({
+        endPoint: `${ENDPOINT}/${id}`,
+        method: "DELETE",
+      });
+      return response;
+    } catch (error) {
+      console.error("Error al eliminar la pista:", error);
+      throw error;
+    }
 }
 
 // Obtener escuderías sin pilotos (si necesitas un filtrado similar al de los pilotos)
