@@ -451,61 +451,6 @@
   ],
   "vehiculos": [
     {
-      "equipo": "Red Bull Racing",
-      "modelo": "RB20",
-      "motor": "Honda",
-      "velocidad_maxima_kmh": 355,
-      "aceleracion_0_100": 2.5,
-      "pilotos": [
-        1,
-        2
-      ],
-      "rendimiento": {
-        "conduccion_normal": {
-          "velocidad_promedio_kmh": 320,
-          "consumo_combustible": {
-            "seco": 1.9,
-            "lluvioso": 2.1,
-            "extremo": 2.4
-          },
-          "desgaste_neumaticos": {
-            "seco": 1.5,
-            "lluvioso": 0.8,
-            "extremo": 2.5
-          }
-        },
-        "conduccion_agresiva": {
-          "velocidad_promedio_kmh": 340,
-          "consumo_combustible": {
-            "seco": 2.4,
-            "lluvioso": 2.6,
-            "extremo": 3
-          },
-          "desgaste_neumaticos": {
-            "seco": 2.2,
-            "lluvioso": 1.2,
-            "extremo": 3.5
-          }
-        },
-        "ahorro_combustible": {
-          "velocidad_promedio_kmh": 300,
-          "consumo_combustible": {
-            "seco": 1.6,
-            "lluvioso": 1.8,
-            "extremo": 2.1
-          },
-          "desgaste_neumaticos": {
-            "seco": 1,
-            "lluvioso": 0.5,
-            "extremo": 1.8
-          }
-        }
-      },
-      "imagen1": "../src/img/primerFrentef1-removebg-preview.png",
-      "imagen2": "../src/img/f1-redbull-rb20-2024-01-removebg-preview.png",
-      "id": "4ef5"
-    },
-    {
       "equipo": "Mercedes-AMG Petronas",
       "modelo": "W15",
       "motor": "Mercedes",

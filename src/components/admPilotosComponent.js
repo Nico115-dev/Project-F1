@@ -46,10 +46,11 @@ class AdmPilotosComponent extends HTMLElement {
         <nav>
           <ul>
             <li><a href="../../src/views/admMenu.html">Home</a></li>
-            <li><a href="../../src/views/vehiculos.html">Vehículos</a></li>
+            <li><a href="../../src/views/admVehiculos.html">Vehiculos</a></li>
             <li><a href="../../src/views/admPilotos.html">Equipos</a></li>
             <li><a href="../../src/views/PistasAdmin.html">Circuitos</a></li>
-            <li><a href="../../src/views/tabla.html">Resultados</a></li>
+            <li><a href="../../index.html">Menu inicio</a></li>
+
           </ul>
         </nav>
       </header>
@@ -365,14 +366,14 @@ class AdmPilotosComponent extends HTMLElement {
     <span class="close" id="closeModalDeleteP">x</span>
     <h2>Eliminar Piloto</h2>
     <form class="form-container">
-        <div class="busquedaEdit">
+       
+ <div class="busquedaEdit">
             <div class="form-group">
                 <label for="selectDeleteP">Nombre</label>
                 <select class="selectsModals" id="selectDeleteP"></select>
             </div>
         </div>
-        <button type="submit" class="submit-btn" id="eliminarBtnP">Eliminar</button>
-    </form>
+        <button type="submit" class="submit-btn" id="eliminarBtnP">Eliminar</button>    </form>
 </div>
 </div>
 

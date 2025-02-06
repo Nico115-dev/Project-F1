@@ -13,10 +13,11 @@ class menuAdm extends HTMLElement {
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
+                        <li><a href="../../src/views/admVehiculos.html">Vehiculos</a></li>
                         <li><a href="../../src/views/admPilotos.html">Equipos</a></li>
                         <li><a href="../../src/views/PistasAdmin.html">Circuitos</a></li>
-                        <li><a href="../../src/views/tabla.html">Resultados</a></li>
+                        <li><a href="../../index.html">Menu inicio</a></li>
+                 
                     </ul>
                 </nav>
             </header>
