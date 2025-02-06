@@ -148,6 +148,7 @@ export class SimulacionCarrera extends HTMLElement {
               <li><a href="../../src/views/menu.html">Home</a></li>
               <li><a href="../../src/views/vehiculos.html">Vehiculos</a></li>
               <li><a href="../../src/views/pilotos.html">Teams</a></li>
+              <li><a href="../../src/views/tabla.html">Resultados</a></li>
               <li><a href="../../src/views/pistas.html">Circuits</a></li>
             </ul>
           </nav>
