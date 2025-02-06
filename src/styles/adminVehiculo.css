@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  font-family: 'Audiowide', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #001f3f, #000428);
+  color: white;
+  overflow-x: hidden;
+}
+
+.gallery-container {
+  margin-top: 10vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-title {
+  font-family: "Audiowide", serif;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: rgba(28, 28, 28, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  max-height: 350px;
+  text-align: center;
+  color: white;
+}
+
+.gallery-item h4 {
+  font-family: "Audiowide", serif;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.vehicle-stats {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.vehicle-stats p {
+  margin: 5px 0;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #b30000, #004080);
+}
+
+.gallery-item:hover h4 {
+  color: #ffcc00;
+}
+
+.gallery-item:hover .vehicle-stats {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalv {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modalv-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 30px;
+  width: 60%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.modalv-content:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.closev {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.modalv-content .f1-details {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.modalv-content .f1-details p {
+  margin: 5px 0;
+}
+
+.gallery-item:hover img {
+  opacity: 0;
+}
+
+.gallery-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: var(--imagen2);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar .health {
+  background-color: #f44336;
+}
+
+.progress-bar .attack {
+  background-color: #4caf50;
+}
+
+.progress-bar .speed {
+  background-color: #ffeb3b;
+}
+
+.progress-container {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.progress-container svg {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
+}
+
+.progress-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.progress-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.progress-animation {
+  transition: stroke-dashoffset 1.2s ease-in-out, filter 0.8s ease-in-out;
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5));
+}
+
+.bounce-animation {
+  animation: bounce 0.5s ease-in-out;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-dasharray: 339.292;
+  stroke-dashoffset: 339.292;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.percentage {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+@keyframes fillCircle {
+  from {
+    stroke-dasharray: 0, 440; /* 440 es el perímetro del círculo */
+  }
+  to {
+    stroke-dasharray: 220, 440; /* 220 es el valor proporcional al porcentaje */
+  }
+}
+
+.circle {
+  animation: fillCircle 5s linear forwards; /* Ajusta 5s al tiempo que quieras para la animación */
+}
+
+.gallery-admin-pilot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnAdminPilot{
+  padding: 10px;
+  background-color: #b30000;
+  border-radius: 10px;
+  width: 10%;
+
+}

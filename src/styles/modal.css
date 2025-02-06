@@ -358,6 +358,7 @@ header {
   padding: 30px;
   color: white;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
 }
 .modal-content {
   display: flex;
