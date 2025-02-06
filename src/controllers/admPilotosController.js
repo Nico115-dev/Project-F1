@@ -27,3 +27,12 @@ export async function savePilot(pilot) {
 export async function deletePilot(id) {
   return await makeApiRequest({ endPoint: `${ENDPOINT}/${id}`, method: "DELETE" });
 }
+
+
+export async function obtenerPilotosSinEquipo() {
+  const pilots = await getPilots()
+
+  // Filtra los pilotos donde el campo 'team' sea null o undefined
+  const pilotosSinEquipo = pilots.filter(piloto => piloto.equipo == null || piloto.equipo == "" || piloto.equipo == undefined );
+  return pilotosSinEquipo;
+}

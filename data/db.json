@@ -179,6 +179,24 @@
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBgr6W3V8FHYMxhqyKedK9KJs3UMGTjtRBw&s",
       "fecha de nacimiento": "31/12/2000",
       "Nacionalidad": "Estadounidense"
+    },
+    {
+      "id": "21",
+      "nombre": "Sergio Pérez",
+      "equipo": "",
+      "rol": "Escudero",
+      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/perez",
+      "fecha de nacimiento": "26/01/1990",
+      "Nacionalidad": "Mexicano"
+    },
+    {
+      "id": "22",
+      "nombre": "Sergio Pérez",
+      "equipo": "",
+      "rol": "Escudero",
+      "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/perez",
+      "fecha de nacimiento": "26/01/1990",
+      "Nacionalidad": "Mexicano"
     }
   ],
   "equipos": [
@@ -291,6 +309,16 @@
       ],
       "logo": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/williams",
       "id": "3e3a"
+    },
+    {
+      "id": "aeed",
+      "nombre": "hola prueba",
+      "pais": "dinamarca",
+      "motor": "SUSUKI",
+      "pilotos": [
+        "21"
+      ],
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZk7uJvtcZA2qYFTEJJbBu9NxNPw8nNTVZdQ&s"
     }
   ],
   "circuitos": [
@@ -932,7 +960,7 @@
       "modelo": "VF-24",
       "motor": "Ferrari",
       "velocidad_maxima_kmh": 334,
-      "aceleracion_0_100": 3.0,
+      "aceleracion_0_100": 3,
       "pilotos": [
         3,
         4

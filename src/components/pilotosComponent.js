@@ -71,7 +71,7 @@ class PilotosComponent extends HTMLElement {
       <div class="grid-container" id="pilots-container"></div>
 
       <div id="modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-contentp">
           <img id="pilot-img" src="" alt="Imagen del piloto" class="modal-img"> <!-- Imagen del piloto -->
           <h2 id="pilot-name"></h2>
           <p><strong>Equipo:</strong> <span id="pilot-team"></span></p>
