@@ -34,3 +34,8 @@ Como usuario, puedes:
 - **CSS** 🎨: Estilos para la presentación y diseño de la interfaz.
 - **JavaScript** ⚡: Lógica de negocio y control de la simulación de las carreras.
 - **Web Components** 🔧: Para crear componentes reutilizables y encapsulados para la interfaz de usuario.
+
+## Instrucciones de uso ##
+- Clona el proyecto con el comando git clone y la url de este repositorio.
+- En el git bash (terminal) ejecuta el siguiente comando: json.server --watch data/db.json --port 4000.
+- Debes tener las dependencias de json server instaladas con el npm.
