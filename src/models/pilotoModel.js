@@ -1,6 +1,6 @@
 export class Piloto {
   constructor({ id, nombre, equipo, rol, imagen, fechaNacimiento, nacionalidad }) {
-    this.id = id; // Se debe proporcionar manualmente
+    this.id = id; 
     this.nombre = nombre;
     this.equipo = equipo;
     this.rol = rol;
