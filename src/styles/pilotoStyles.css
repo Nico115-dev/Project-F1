@@ -163,7 +163,7 @@ body {
   display: flex;
 }
 
-.modal-content {
+.modal-contentp {
   background-color: #0f172a;
   padding: 25px;
   border-radius: 10px;
@@ -174,12 +174,12 @@ body {
   color: white;
 }
 
-.modal-content h2 {
+.modal-contentp h2 {
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.modal-content p {
+.modal-contentp p {
   font-size: 18px;
   line-height: 1.5;
 }
@@ -278,3 +278,7 @@ h2:first-of-type {
   margin-top: 20vh;
 }
 
+.modal-img{
+  width: 100%;
+
+}
