@@ -24,9 +24,9 @@ Como usuario, puedes:
 - **Seleccionar pista** 🏁: Elegir una pista para la carrera.
 - **Ejecutar simulación** 🎮: Iniciar la simulación de la carrera.
 - **Ver tabla de posiciones** 🏆: Consultar la tabla con las posiciones finales de los pilotos después de la carrera.
-- **Ver información de pilotos** 📊: Consultar estadísticas y detalles de cada piloto.
+- **Ver información de pilotos** 📊: Consultar detalles de cada piloto.
 - **Ver información de carros** 🚙: Consultar las características y detalles de cada carro.
-- **Ver información de pistas** 🛤️: Consultar las características de cada pista.
+- **Ver información de pistas** 🛤️: Consultar detalles de cada pista.
 
 ## Tecnologías Usadas 💻
 
