@@ -197,6 +197,15 @@
       "imagen": "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/perez",
       "fechaNacimiento": "26/01/1990",
       "Nacionalidad": "Mexicano"
+    },
+    {
+      "id": "23",
+      "nombre": "sebas",
+      "equipo": "Red Bull Racing",
+      "rol": "lider",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7CbaFVfg_BVR6Oq79D2OcKFLZooJoluXmA&s",
+      "fechaNacimiento": "2025-03-07",
+      "pais": "Colombia"
     }
   ],
   "equipos": [

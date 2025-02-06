@@ -10,6 +10,10 @@ import "./src/components/circuitoadminComponents.js";
 import "./src/components/simulacionComponent.js"
 
 import "./src/components/adminIndexComponent.js"
+import "./src/components/tablaComponent.js";
+import "./src/components/admMenuComponent.js";
+
+import"./src/components/simulacionComponent.js";
 import "./src/components/tablaComponent.js"
 import "./src/components/admMenuComponent.js"
 import "./src/components/adminVehiculos.js"
